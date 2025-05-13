@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr
+20250513130918
+[BOUND OBJECT FILES]
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\memorystore.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mycommandline.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystring.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystringtokeniser.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\pin.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stringtointeger.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\
+-LC:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\
+-LC:/gnat/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
