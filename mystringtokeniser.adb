@@ -20,8 +20,26 @@ package body MyStringTokeniser with SPARK_Mode is
               (Tokens(J).Start >= S'First and
                    Tokens(J).Length > 0) and then
             Tokens(J).Length-1 <= S'Last - Tokens(J).Start);
+         -- Loop Invariant 1:
+         -- This ensures that all stored tokens are valid:
+         --      Each token's Start position is not beyond in the left boundary of the input S.
+         --      Each token has a Length > 0 (no empty tokens).
+         --      Given that Length > 0, the last character of each token does not exceed S's right boundary.
+         -- These make sure that all tokens are non empty and in S's bounds to prevent out of bounds issues.
 
          pragma Loop_Invariant (OutIndex = Tokens'First + Processed);
+         -- Loop Invariant 2:
+         -- This means that the index for the next token to be written (OutIndex)
+         -- must equal the starting index of the Tokens array (Tokens'First) plus the number
+         -- of tokens already processed (Processed).
+         --
+         -- For example, if one token has already been processed, it satisfies:
+         --     2 (OutIndex) = 1 (Tokens'First) + 1 (Processed)
+         --
+         -- It ensures that all tokens are written into the Tokens array in order and
+         -- continuously, and that each writing is to the correct index.
+
+
 
          -- look for start of next token
          while (Index >= S'First and Index < S'Last) and then Is_Whitespace(S(Index)) loop
