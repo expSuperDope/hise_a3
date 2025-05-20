@@ -1,0 +1,58 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U calculator%b		calculator.adb		93265bf7 NE OO PK
+
+U calculator%s		calculator.ads		1cbf2090 EE NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+
+D calculator.ads	20250520065454 460a72f8 calculator%s
+D calculator.adb	20250520065440 d52c290f calculator%b
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D system.ads		20190518041258 32a08138 system%s
+G a e
+G c Z s b [add calculator 14 13 none]
+G c Z s b [sub calculator 15 13 none]
+G c Z s b [mul calculator 16 13 none]
+G c Z s b [div calculator 17 13 none]
+G c Z s s [resultIP calculator 8 9 none]
+X 1 calculator.ads
+3K9*Calculator 19l5 19e15 2|1r10 2r10 4b14 54l5 54t15
+5I12*Int32{3|52I9} 11r19 14r25 15r25 16r25 17r25 2|2r21 6r24 9r20 9r51 12r63
+. 17r24 20r20 20r51 23r63 28r24 31r20 31r51 34r63 39r24 47r20 47r51 50r63
+6I12*Int64{3|55I9} 2|1r21 7r10 7r19 7r30 9r14 9r45 18r10 18r19 18r30 20r14
+. 20r45 29r10 29r19 29r30 31r14 31r45 40r10 46r12 46r23 47r14 47r45
+8R9*Result 12e14 14r39 15r39 16r39 17r39 2|6r38 17r38 28r38 39r38
+9b7*Success{boolean} 2|10m18 12m18 21m18 23m18 32m18 34m18 43m18 48m18 50m18
+10b7*Div_Zero{boolean} 2|10m35 12m35 21m35 23m35 32m35 34m35 43m48 48m35
+. 50m35
+11i7*Value{5I12} 2|10m54 12m54 21m54 23m54 32m54 34m54 43m36 48m54 50m54
+14V13*Add{8R9} 14>18 14>21 2|6b14 14l8 14t11
+14i18 A{5I12} 2|6b18 7r25
+14i21 B{5I12} 2|6b21 7r36
+15V13*Sub{8R9} 15>18 15>21 2|17b14 25l8 25t11
+15i18 A{5I12} 2|17b18 18r25
+15i21 B{5I12} 2|17b21 18r36
+16V13*Mul{8R9} 16>18 16>21 2|28b14 36l8 36t11
+16i18 A{5I12} 2|28b18 29r25
+16i21 B{5I12} 2|28b21 29r36
+17V13*Div{8R9} 17>18 17>21 2|39b14 52l8 52t11
+17i18 A{5I12} 2|39b18 46r18
+17i21 B{5I12} 2|39b21 42r10 46r29
+X 2 calculator.adb
+7i7 V{1|6I12} 9r10 9r41 12r69
+18i7 V{1|6I12} 20r10 20r41 23r69
+29i7 V{1|6I12} 31r10 31r41 34r69
+40i7 V{1|6I12} 46m7 47r10 47r41 50r69
+X 3 interfac.ads
+38K9*Interfaces 1|1w6 5r21 6r21 3|184e15
+52I9*Integer_32<integer> 1|5r32
+55I9*Integer_64<long_long_integer> 1|6r32
+
