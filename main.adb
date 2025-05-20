@@ -8,6 +8,7 @@ with PIN;
 with MemoryStore;
 
 with Calculator;
+with Stack;
 
 with Ada.Text_IO;use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
@@ -22,139 +23,54 @@ procedure Main is
 
    Op_Code : Integer;
    A, B : Int32;
-   R    : Result;
---     --  Helper instantiation for bounded lines
---     package Lines is new MyString (Max_MyString_Length => 2048);
---     S    : Lines.MyString;
---  
---     --  Memory database demo
---     Mem  : MemoryStore.Database;
---     Loc1 : MemoryStore.Location_Index := 10;
---     --  PIN demo
---     PIN1 : PIN.PIN := PIN.From_String ("1234");
---     PIN2 : PIN.PIN := PIN.From_String ("1234");
+   S    : Stack.Stack_Instance;
+   Success : Boolean := False;
        
 begin
-   if Ada.Command_Line.Argument_Count /= 3 then
-      Put_Line("Usage: ./main <op> <a> <b>");
-      Put_Line("Op codes: 1 = +, 2 = -, 3 = *, 4 = /");
-      return;
-   end if;
-
-
-   Op_Code := Integer'Value(Ada.Command_Line.Argument(1));
-   A       := Int32'Value(Ada.Command_Line.Argument(2));
-   B       := Int32'Value(Ada.Command_Line.Argument(3));
-
-   case Op_Code is
-      when 1 =>
-         R := Calculator.Add(A, B);
-      when 2 =>
-         R := Calculator.Sub(A, B);
-      when 3 =>
-         R := Calculator.Mul(A, B);
-      when 4 =>
-         R := Calculator.Div(A, B);
-      when others =>
-         Put_Line("Invalid operation code.");
-         return;
-   end case;
    
-   if R.Success then
-      Put_Line("Result: " & Integer'Image(Integer(R.Value)));
-   elsif R.Div_Zero then
-      Put_Line("Error: Division by zero.");
-   else
-      Put_Line("Error: Integer overflow.");
-   end if;
---     ------------------------------------------------------------------
---     --  Command-line echo
---     ------------------------------------------------------------------
---     Put(MyCommandLine.Command_Name); Put_Line(" is running!");
---     Put("I was invoked with "); Put(MyCommandLine.Argument_Count,0); Put_Line(" arguments.");
---     for Arg in 1..MyCommandLine.Argument_Count loop
---        Put("Argument "); Put(Arg,0); Put(": """);
---        Put(MyCommandLine.Argument(Arg)); Put_Line("""");
---     end loop;
---     
---     ------------------------------------------------------------------
---     --  MemoryStore CRUD(Create, Read, Update, Delete) demo
---     ------------------------------------------------------------------
---  
---     MemoryStore.Init (Mem);
---  
---     Put_Line ("Storing 50 at location 10 ...");
---     MemoryStore.Put (Mem, Loc1, 50);
---  
---     Put ("Location 10 now holds: ");
---     Ada.Integer_Text_IO.Put (Integer (MemoryStore.Get (Mem, Loc1)), 0);
---     New_Line;
---  
---     Put_Line ("Listing defined locations:");
---     MemoryStore.Print (Mem);
---  
---     Put_Line ("Removing location 10 ...");
---     MemoryStore.Remove (Mem, Loc1);
---  
---     if MemoryStore.Has (Mem, Loc1) then
---        Put_Line ("Location 10 is still defined! (unexpected)");
---     else
---        Put_Line ("Location 10 successfully removed.");
---     end if;
---     
---     ------------------------------------------------------------------
---     --  Tokeniser demo
---     ------------------------------------------------------------------
---     Put_Line("Reading a line of input. Enter some text (at most 3 tokens): ");
---     Lines.Get_Line(S);
---  
---     Put_Line("Splitting the text into at most 5 tokens");
---     declare
---        T : MyStringTokeniser.TokenArray(1..5) := (others => (Start => 1, Length => 0));
---        NumTokens : Natural;
---     begin
---        MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
---        Put("You entered "); Put(NumTokens); Put_Line(" tokens.");
---        for I in 1..NumTokens loop
---           declare
---              TokStr : String := Lines.To_String(Lines.Substring(S,T(I).Start,T(I).Start+T(I).Length-1));
---           begin
---              Put("Token "); Put(I); Put(" is: """);
---              Put(TokStr); Put_Line("""");
---           end;
---        end loop;
---        if NumTokens > 3 then
---           Put_Line("You entered too many tokens --- I said at most 3");
---        end if;
---     end;
---     
---     ------------------------------------------------------------------
---     --  PIN equality demo
---     ------------------------------------------------------------------
---     If PIN."="(PIN1,PIN2) then
---        Put_Line("The two PINs are equal, as expected.");
---     end if;
---     
---     ------------------------------------------------------------------
---     --  32-bit overflow / parsing demo (unchanged)
---     ------------------------------------------------------------------
---     declare
---        Smallest_Integer : Integer := StringToInteger.From_String("-2147483648");
---        R : Long_Long_Integer := 
---          Long_Long_Integer(Smallest_Integer) * Long_Long_Integer(Smallest_Integer);
---     begin
---        Put_Line("This is -(2 ** 32) (where ** is exponentiation) :");
---        Put(Smallest_Integer); New_Line;
---        
---        if R < Long_Long_Integer(Integer'First) or
---           R > Long_Long_Integer(Integer'Last) then
---           Put_Line("Overflow would occur when trying to compute the square of this number");
---        end if;
---           
---     end;
---     Put_Line("2 ** 32 is too big to fit into an Integer...");
---     Put_Line("Hence when trying to parse it from a string, it is treated as 0:");
---     Put(StringToInteger.From_String("2147483648")); New_Line;
+     Stack.Init(s);
    
+     if Ada.Command_Line.Argument_Count /= 3 then
+        Put_Line("Usage: ./main <op> <a> <b>");
+        return;
+     end if;
+ 
+     Op_Code := Integer'Value(Ada.Command_Line.Argument(1));
+     A       := Int32'Value(Ada.Command_Line.Argument(2));
+     B       := Int32'Value(Ada.Command_Line.Argument(3));
+ 
+     case Op_Code is
+       when 1 =>
+         Stack.Push(S,A,Success);
+         if Success then
+            Put_Line("Result: Push Successfully");
+         else
+            Put_Line("Not enough space");
+         end if;
+       when 2 =>
+         Stack.Push2(S,A,B,Success);
+         if Success then
+            Put_Line("Result: Push2 Successfully");
+         else
+            Put_Line("Not enough space");
+         end if;
+       when 3 =>
+         Stack.Pop(S,A,Success);
+         if Success then
+            Put_Line("Result: Pop Successfully");
+         else
+               Put_Line("Not enough number");
+         end if;
+       when 4 =>
+         Stack.Pop2(S,A,B,Success);
+         if Success then
+            Put_Line("Result: Pop2 Successfully");
+         else
+               Put_Line("Not enough number");
+         end if;
+       when others =>
+          Put_Line("Invalid operation code.");
+          return;
+  end case;
       
 end Main;
