@@ -214,12 +214,8 @@ begin
                                      Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1)));
                   Success: Boolean := False;
                begin
-                  if (Token2 > Integer(Int32'Last) or else Token2 < Integer(Int32'First)) then
-                     Put_Line("Invalid argument(s):Number is out of bounds!");
-                  else
-                     Stack.Push(L,Sk,Int32(Token2),Success);
-                     Put_Line("Push: " & Integer'Image(Token2));
-                  end if;
+                  Stack.Push(L,Sk,Int32(Token2),Success);
+                  Put_Line("Push: " & Integer'Image(Token2));
                end;
 
             elsif Token1 = "push2" then
@@ -240,13 +236,8 @@ begin
                                                                  Lines.To_String(Lines.Substring(S,T(3).Start,T(3).Start+T(3).Length-1)));
                   Success: Boolean := False;
                begin
-                  if (Token2 > Integer(Int32'Last) or else Token2 < Integer(Int32'First)
-                     or else Token3 > Integer(Int32'Last) or else Token3 < Integer(Int32'First)) then
-                     Put_Line("Invalid argument(s):Number is out of bounds!");
-                  else
-                     Stack.Push2(L,Sk,Int32(Token2),Int32(Token3),Success);
-                     Put_Line("Push: " & Integer'Image(Token2) & " and " & Integer'Image(Token3));
-                  end if;
+                  Stack.Push2(L,Sk,Int32(Token2),Int32(Token3),Success);
+                  Put_Line("Push: " & Integer'Image(Token2) & " and " & Integer'Image(Token3));
                end;
 
             elsif Token1 = "pop" then
