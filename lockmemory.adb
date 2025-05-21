@@ -4,12 +4,10 @@ package body LockMemory is
                  Loc : MemoryStore.Location_Index) return MemoryStore.Int32 is
    begin
       if Locker.Is_Locked(L) then
-         Put_Line("Locked!");
          return 0;
       end if;
       
       if not MemoryStore.Has(D, Loc) then
-         Put_Line("No value this location! Return 0");
          return 0;
       end if;
       
@@ -21,7 +19,6 @@ package body LockMemory is
                   Val : MemoryStore.Int32) is
    begin
       if Locker.Is_Locked(L) then
-         Put_Line("Locked!");
          return;
       end if;
 
@@ -32,12 +29,7 @@ package body LockMemory is
                      Loc : MemoryStore.Location_Index) is
    begin
       if Locker.Is_Locked(L) then
-         Put_Line("Locked!");
          return;
-      end if;
-      
-      if not MemoryStore.Has(D, Loc) then
-         Put_Line("No value this location! Remove nothing!");
       end if;
       
       MemoryStore.Remove(D, Loc);
@@ -46,7 +38,6 @@ package body LockMemory is
    procedure Print (L : Locker.Locker; D : MemoryStore.Database) is
    begin
       if Locker.Is_Locked(L) then
-         Put_Line("Locked!");
          return;
       end if;
       

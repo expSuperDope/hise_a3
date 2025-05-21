@@ -9,7 +9,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U lockmemory%b		lockmemory.adb		677c317c NE OO PK
+U lockmemory%b		lockmemory.adb		07bb70d0 NE OO PK
 
 U lockmemory%s		lockmemory.ads		b7b4628b EE NE OO PK
 W ada%s			ada.ads			ada.ali
@@ -31,7 +31,7 @@ D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
 D locker.ads		20250521031720 659a9cc6 locker%s
 D lockmemory.ads	20250521051000 ce94dfe5 lockmemory%s
-D lockmemory.adb	20250521052402 a9e8ee99 lockmemory%b
+D lockmemory.adb	20250521091500 c92faf35 lockmemory%b
 D memorystore.ads	20250513130918 44057d61 memorystore%s
 D pin.ads		20250513130918 553c8633 pin%s
 D system.ads		20190518041258 32a08138 system%s
@@ -58,7 +58,6 @@ G r c none [get lockmemory 8 14 none] [get memorystore 22 14 none]
 G r c none [put lockmemory 11 14 none] [is_locked locker 15 13 none]
 G r c none [put lockmemory 11 14 none] [put memorystore 25 14 none]
 G r c none [remove lockmemory 14 14 none] [is_locked locker 15 13 none]
-G r c none [remove lockmemory 14 14 none] [has memorystore 20 14 none]
 G r c none [remove lockmemory 14 14 none] [remove memorystore 29 14 none]
 G r c none [print lockmemory 16 14 none] [is_locked locker 15 13 none]
 G r c none [print lockmemory 16 14 none] [print memorystore 34 14 none]
@@ -68,42 +67,41 @@ X 3 a-inteio.ads
 18K13*Integer_Text_IO[8|46] 13|4w10 4r35
 X 7 a-textio.ads
 57K13*Text_IO 727e16 13|3w10 3r26
-508U14*Put_Line 14|7s10 12s10 24s10 35s10 40s10 49s10
 X 10 interfac.ads
 52I9*Integer_32<integer>
 X 12 locker.ads
-5K9*Locker 24e11 13|2w6 8r24 11r24 14r24 16r24 14|3r22 6r10 19r23 23r10 31r26
-. 34r10 46r25 48r10
-7R9*Locker 22e14 13|8r31 11r31 14r31 16r31 14|3r29 19r30 31r33 46r32
-15V13*Is_Locked{boolean} 14|6s17 23s17 34s17 48s17
+5K9*Locker 24e11 13|2w6 8r24 11r24 14r24 16r24 14|3r22 6r10 17r23 21r10 28r26
+. 31r10 38r25 40r10
+7R9*Locker 22e14 13|8r31 11r31 14r31 16r31 14|3r29 17r30 28r33 38r32
+15V13*Is_Locked{boolean} 14|6s17 21s17 31s17 40s17
 X 13 lockmemory.ads
-6K9*LockMemory 18l5 18e15 14|1b14 56l5 56t15
-8V14*Get{15|11I12} 8>22 8>39 8>64 14|3b13 17l8 17t11
+6K9*LockMemory 18l5 18e15 14|1b14 47l5 47t15
+8V14*Get{15|11I12} 8>22 8>39 8>64 14|3b13 15l8 15t11
 8r22 L{12|7R9} 14|3b18 6r27
-8r39 D{15|13R9} 14|3b37 11r30 16r30
-8i64 Loc{15|8I12} 14|4b18 11r33 16r33
-11U14*Put 11>22 11=39 12>22 12>58 14|19b14 29l8 29t11
-11r22 L{12|7R9} 14|19b19 23r27
-11r39 D{15|13R9} 14|19b38 28m23
-12i22 Loc{15|8I12} 14|20b19 28r26
-12i58 Val{15|11I12} 14|21b19 28r31
-14U14*Remove 14>22 14=39 14>71 14|31b14 44l8 44t14
-14r22 L{12|7R9} 14|31b22 34r27
-14r39 D{15|13R9} 14|31b41 39r30 43m26
-14i71 Loc{15|8I12} 14|32b22 39r33 43r29
-16U14*Print 16>22 16>39 14|46b14 54l8 54t13
-16r22 L{12|7R9} 14|46b21 48r27
-16r39 D{15|13R9} 14|46b40 53r25
+8r39 D{15|13R9} 14|3b37 10r30 14r30
+8i64 Loc{15|8I12} 14|4b18 10r33 14r33
+11U14*Put 11>22 11=39 12>22 12>58 14|17b14 26l8 26t11
+11r22 L{12|7R9} 14|17b19 21r27
+11r39 D{15|13R9} 14|17b38 25m23
+12i22 Loc{15|8I12} 14|18b19 25r26
+12i58 Val{15|11I12} 14|19b19 25r31
+14U14*Remove 14>22 14=39 14>71 14|28b14 36l8 36t14
+14r22 L{12|7R9} 14|28b22 31r27
+14r39 D{15|13R9} 14|28b41 35m26
+14i71 Loc{15|8I12} 14|29b22 35r29
+16U14*Print 16>22 16>39 14|38b14 45l8 45t13
+16r22 L{12|7R9} 14|38b21 40r27
+16r39 D{15|13R9} 14|38b40 44r25
 X 15 memorystore.ads
 3K9*MemoryStore 13|1w6 8r42 8r69 9r29 11r49 12r30 12r66 14r49 14r79 16r42
-. 14|3r41 4r24 4r59 11r14 16r14 19r49 20r25 21r25 28r7 31r52 32r28 39r14
-. 43r7 46r44 53r7 15|52e16
-8I12*Location_Index{positive} 13|8r81 12r42 14r91 14|4r36 20r37 32r40
-11I12*Int32{10|52I9} 13|9r41 12r78 14|4r71 21r37
-13R9*Database 13|8r54 11r61 14r61 16r54 14|3r53 19r61 31r64 46r56 15|51e14
-20V14*Has{boolean} 14|11s26 39s26
-22V14*Get{11I12} 14|16s26
-25U14*Put 14|28s19
-29U14*Remove 14|43s19
-34U14*Print 14|53s19
+. 14|3r41 4r24 4r59 10r14 14r14 17r49 18r25 19r25 25r7 28r52 29r28 35r7 38r44
+. 44r7 15|52e16
+8I12*Location_Index{positive} 13|8r81 12r42 14r91 14|4r36 18r37 29r40
+11I12*Int32{10|52I9} 13|9r41 12r78 14|4r71 19r37
+13R9*Database 13|8r54 11r61 14r61 16r54 14|3r53 17r61 28r64 38r56 15|51e14
+20V14*Has{boolean} 14|10s26
+22V14*Get{11I12} 14|14s26
+25U14*Put 14|25s19
+29U14*Remove 14|35s19
+34U14*Print 14|44s19
 

@@ -15,12 +15,7 @@ package body Locker is
       if L.Locked then
          if N = L.Number then
             L.Locked := False;
-            Put_Line("Unlock successfully!");
-         else
-            Put_Line("Unlock failed!");
          end if;
-      else
-         Put_Line("Already unlocked!");
       end if;
    end Try_Unlock;
 
@@ -29,9 +24,6 @@ package body Locker is
       if not L.Locked then
          L.Number := N;
          L.Locked := True;
-         Put_Line("Reset password successfully!");
-      else
-         Put_Line("Locked! Cannot reset!");
       end if;
    end Reset_PWD;
 
