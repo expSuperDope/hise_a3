@@ -8,7 +8,6 @@ package body Locker is
    begin
       L.Number := N;
       L.Locked := True;  
-      Put_Line("Init successfully!");
    end Init;
 
    procedure Try_Unlock(L : in out Locker; N : PIN.PIN) is

@@ -1,423 +1,7 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file />
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 12" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 50" line=" 9" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\stack.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\stack.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\stringtointeger.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 63" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 21" line=" 38" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 54" line=" 28" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 23" line=" 86" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 43" line=" 38" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 24" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 15" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 15" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 15" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 15" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 15" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
+    <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_file>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
@@ -482,15 +66,15 @@
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 31" line=" 74" >
+    <file_marker column=" 31" line=" 133" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 42" >
+    <file_marker column=" 42" line=" 85" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 67" >
+    <file_marker column=" 42" line=" 126" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
@@ -698,19 +282,11 @@
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 85" >
+    <file_marker column=" 4" line=" 167" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 9" line=" 52" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
-      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\stack.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 9" line=" 95" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
@@ -722,7 +298,15 @@
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 84" >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 143" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
@@ -798,9 +382,425 @@
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 4" line=" 3" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
       <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 8" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\calculator.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 46" line=" 101" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 104" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 13" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 105" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 106" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 112" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 147" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 112" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 19" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 156" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 112" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 145" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 162" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\stack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\memorystore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\lockmemory.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\locker.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\pin.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 48" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 75" line=" 53" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 62" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 75" line=" 53" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 63" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 13" line=" 58" >
+      <vfs_project>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr</vfs_project>
+      <vfs_file>C:\Users\Lenovo\Desktop\HISE\A3\assignment3\main.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
