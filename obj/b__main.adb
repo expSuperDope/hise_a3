@@ -28,14 +28,16 @@ package body ada_main is
    E114 : Short_Integer; pragma Import (Ada, E114, "ada__finalization_E");
    E113 : Short_Integer; pragma Import (Ada, E113, "system__file_io_E");
    E101 : Short_Integer; pragma Import (Ada, E101, "ada__text_io_E");
+   E159 : Short_Integer; pragma Import (Ada, E159, "memorystore_E");
+   E161 : Short_Integer; pragma Import (Ada, E161, "mycommandline_E");
+   E163 : Short_Integer; pragma Import (Ada, E163, "mystring_E");
+   E165 : Short_Integer; pragma Import (Ada, E165, "mystringtokeniser_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "pin_E");
+   E151 : Short_Integer; pragma Import (Ada, E151, "locker_E");
    E139 : Short_Integer; pragma Import (Ada, E139, "calculator_E");
-   E141 : Short_Integer; pragma Import (Ada, E141, "memorystore_E");
-   E143 : Short_Integer; pragma Import (Ada, E143, "mycommandline_E");
-   E145 : Short_Integer; pragma Import (Ada, E145, "mystring_E");
-   E147 : Short_Integer; pragma Import (Ada, E147, "mystringtokeniser_E");
-   E149 : Short_Integer; pragma Import (Ada, E149, "pin_E");
-   E153 : Short_Integer; pragma Import (Ada, E153, "stack_E");
-   E155 : Short_Integer; pragma Import (Ada, E155, "stringtointeger_E");
+   E157 : Short_Integer; pragma Import (Ada, E157, "lockmemory_E");
+   E167 : Short_Integer; pragma Import (Ada, E167, "stack_E");
+   E169 : Short_Integer; pragma Import (Ada, E169, "stringtointeger_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -207,14 +209,16 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E101 := E101 + 1;
-      E139 := E139 + 1;
-      E141 := E141 + 1;
-      E143 := E143 + 1;
-      E145 := E145 + 1;
-      E147 := E147 + 1;
-      E149 := E149 + 1;
+      E159 := E159 + 1;
+      E161 := E161 + 1;
+      E163 := E163 + 1;
+      E165 := E165 + 1;
       E153 := E153 + 1;
-      E155 := E155 + 1;
+      E151 := E151 + 1;
+      E139 := E139 + 1;
+      E157 := E157 + 1;
+      E167 := E167 + 1;
+      E169 := E169 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -250,12 +254,14 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\calculator.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\memorystore.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mycommandline.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystring.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystringtokeniser.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\pin.o
+   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\locker.o
+   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\calculator.o
+   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\lockmemory.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stack.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stringtointeger.o
    --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\main.o

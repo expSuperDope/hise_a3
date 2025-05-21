@@ -5,54 +5,114 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U calculator%b		calculator.adb		93265bf7 NE OO PK
+U calculator%b		calculator.adb		8049386c NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_lli%s	s-imglli.adb		s-imglli.ali
 
-U calculator%s		calculator.ads		1cbf2090 EE NE OO PK
+U calculator%s		calculator.ads		db405d59 EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
+W locker%s		locker.adb		locker.ali
 
-D calculator.ads	20250520065454 460a72f8 calculator%s
-D calculator.adb	20250520065440 d52c290f calculator%b
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-inteio.ads		20190518041258 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D calculator.ads	20250521040348 bcd0cf3e calculator%s
+D calculator.adb	20250521040604 3c99f752 calculator%b
 D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D locker.ads		20250521031720 659a9cc6 locker%s
+D pin.ads		20250513130918 553c8633 pin%s
 D system.ads		20190518041258 32a08138 system%s
+D s-conca6.ads		20190518041256 d2c72db2 system.concat_6%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-imgint.ads		20190518041256 02dbe0c2 system.img_int%s
+D s-imglli.ads		20190518041258 114f55d1 system.img_lli%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
 G a e
-G c Z s b [add calculator 14 13 none]
-G c Z s b [sub calculator 15 13 none]
-G c Z s b [mul calculator 16 13 none]
-G c Z s b [div calculator 17 13 none]
-G c Z s s [resultIP calculator 8 9 none]
-X 1 calculator.ads
-3K9*Calculator 19l5 19e15 2|1r10 2r10 4b14 54l5 54t15
-5I12*Int32{3|52I9} 11r19 14r25 15r25 16r25 17r25 2|2r21 6r24 9r20 9r51 12r63
-. 17r24 20r20 20r51 23r63 28r24 31r20 31r51 34r63 39r24 47r20 47r51 50r63
-6I12*Int64{3|55I9} 2|1r21 7r10 7r19 7r30 9r14 9r45 18r10 18r19 18r30 20r14
-. 20r45 29r10 29r19 29r30 31r14 31r45 40r10 46r12 46r23 47r14 47r45
-8R9*Result 12e14 14r39 15r39 16r39 17r39 2|6r38 17r38 28r38 39r38
-9b7*Success{boolean} 2|10m18 12m18 21m18 23m18 32m18 34m18 43m18 48m18 50m18
-10b7*Div_Zero{boolean} 2|10m35 12m35 21m35 23m35 32m35 34m35 43m48 48m35
-. 50m35
-11i7*Value{5I12} 2|10m54 12m54 21m54 23m54 32m54 34m54 43m36 48m54 50m54
-14V13*Add{8R9} 14>18 14>21 2|6b14 14l8 14t11
-14i18 A{5I12} 2|6b18 7r25
-14i21 B{5I12} 2|6b21 7r36
-15V13*Sub{8R9} 15>18 15>21 2|17b14 25l8 25t11
-15i18 A{5I12} 2|17b18 18r25
-15i21 B{5I12} 2|17b21 18r36
-16V13*Mul{8R9} 16>18 16>21 2|28b14 36l8 36t11
-16i18 A{5I12} 2|28b18 29r25
-16i21 B{5I12} 2|28b21 29r36
-17V13*Div{8R9} 17>18 17>21 2|39b14 52l8 52t11
-17i18 A{5I12} 2|39b18 46r18
-17i21 B{5I12} 2|39b21 42r10 46r29
-X 2 calculator.adb
-7i7 V{1|6I12} 9r10 9r41 12r69
-18i7 V{1|6I12} 20r10 20r41 23r69
-29i7 V{1|6I12} 31r10 31r41 34r69
-40i7 V{1|6I12} 46m7 47r10 47r41 50r69
-X 3 interfac.ads
-38K9*Interfaces 1|1w6 5r21 6r21 3|184e15
-52I9*Integer_32<integer> 1|5r32
-55I9*Integer_64<long_long_integer> 1|6r32
+G c Z s b [add calculator 16 13 none]
+G c Z s b [sub calculator 17 13 none]
+G c Z s b [mul calculator 18 13 none]
+G c Z s b [div calculator 19 13 none]
+G c Z s s [resultIP calculator 11 9 none]
+G r c none [add calculator 16 13 none] [is_locked locker 15 13 none]
+G r c none [sub calculator 17 13 none] [is_locked locker 15 13 none]
+G r c none [mul calculator 18 13 none] [is_locked locker 15 13 none]
+G r c none [div calculator 19 13 none] [is_locked locker 15 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 10|3r6 3r22 4r6 4r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 10|4w10 4r35
+X 7 a-textio.ads
+57K13*Text_IO 727e16 10|3w10 3r26
+508U14*Put_Line 11|10s10 15s10 18s10 28s10 33s10 36s10 46s10 51s10 54s10
+. 64s10 69s10 75s10 78s10
+X 10 calculator.ads
+6K9*Calculator 22l5 22e15 11|1r10 2r10 4b14 83l5 83t15
+8I12*Int32{12|52I9} 13r18 16r43 17r43 18r43 19r43 11|2r21 6r42 14r20 14r51
+. 18r32 18r57 19r41 24r42 32r20 32r51 36r32 36r57 37r41 42r42 50r20 50r51
+. 54r32 54r57 55r40 60r42 74r20 74r51 78r32 78r57 79r40
+9I12*Int64{12|55I9} 11|1r21 7r10 7r19 7r30 14r14 14r45 18r82 25r10 25r19
+. 25r30 32r14 32r45 36r82 43r10 43r19 43r30 50r14 50r45 54r82 61r10 73r12
+. 73r23 74r14 74r45 78r82
+11R9*Result 14e14 16r57 17r57 18r57 19r57 11|6r56 24r56 42r56 60r56
+12b7*Success{boolean} 11|11m18 16m18 19m18 29m18 34m18 37m18 47m18 52m18
+. 55m18 65m18 70m18 76m18 79m18
+13i7*Value{8I12} 11|11m34 16m34 19m34 29m34 34m34 37m34 47m34 52m34 55m33
+. 65m34 70m34 76m35 79m33
+16V13*Add{11R9} 16>18 16>36 16>39 11|6b14 21l8 21t11
+16r18 L{14|7R9} 11|6b18 9r27
+16i36 A{8I12} 11|6b36 7r25 18r44
+16i39 B{8I12} 11|6b39 7r36 18r69
+17V13*Sub{11R9} 17>18 17>36 17>39 11|24b14 39l8 39t11
+17r18 L{14|7R9} 11|24b18 27r27
+17i36 A{8I12} 11|24b36 25r25 36r44
+17i39 B{8I12} 11|24b39 25r36 36r69
+18V13*Mul{11R9} 18>18 18>36 18>39 11|42b14 57l8 57t11
+18r18 L{14|7R9} 11|42b18 45r27
+18i36 A{8I12} 11|42b36 43r25 54r44
+18i39 B{8I12} 11|42b39 43r36 54r69
+19V13*Div{11R9} 19>18 19>36 19>39 11|60b14 81l8 81t11
+19r18 L{14|7R9} 11|60b18 63r27
+19i36 A{8I12} 11|60b36 73r18 78r44
+19i39 B{8I12} 11|60b39 68r10 73r29 78r69
+X 11 calculator.adb
+7i7 V{10|9I12} 14r10 14r41 18r94 19r47
+25i7 V{10|9I12} 32r10 32r41 36r94 37r47
+43i7 V{10|9I12} 50r10 50r41 54r94 55r46
+61i7 V{10|9I12} 73m7 74r10 74r41 78r94 79r46
+X 12 interfac.ads
+38K9*Interfaces 10|1w6 8r21 9r21 12|184e15
+52I9*Integer_32<integer> 10|8r32
+55I9*Integer_64<long_long_integer> 10|9r32
+X 14 locker.ads
+5K9*Locker 10|2w6 16r21 17r21 18r21 19r21 11|6r21 9r10 24r21 27r10 42r21
+. 45r10 60r21 63r10 14|24e11
+7R9*Locker 10|16r28 17r28 18r28 19r28 11|6r28 24r28 42r28 60r28 14|22e14
+15V13*Is_Locked{boolean} 11|9s17 27s17 45s17 63s17
 

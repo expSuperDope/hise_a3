@@ -7,18 +7,19 @@ P ZX
 
 RN
 RV NO_IO
-RV NO_SECONDARY_STACK
 RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		9465090d NE OO SU
+U main%b		main.adb		adeb3b99 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.long_long_integer_text_io%s  a-llitio.ads	a-llitio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W calculator%s		calculator.adb		calculator.ali
+W locker%s		locker.adb		locker.ali
+W lockmemory%s		lockmemory.adb		lockmemory.ali
 W memorystore%s		memorystore.adb		memorystore.ali
 W mycommandline%s	mycommandline.adb	mycommandline.ali
 W mystring%s		mystring.adb		mystring.ali
@@ -26,8 +27,6 @@ W mystringtokeniser%s	mystringtokeniser.adb	mystringtokeniser.ali
 W pin%s			pin.adb			pin.ali
 W stack%s		stack.adb		stack.ali
 W stringtointeger%s	stringtointeger.adb	stringtointeger.ali
-Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
-Z system.val_int%s	s-valint.adb		s-valint.ali
 
 D ada.ads		20190518041256 76789da1 ada%s
 D a-charac.ads		20190518041256 2d3ec45b ada.characters%s
@@ -42,17 +41,19 @@ D a-tags.ads		20190518041258 491b781d ada.tags%s
 D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
-D calculator.ads	20250520065454 460a72f8 calculator%s
+D calculator.ads	20250521040348 bcd0cf3e calculator%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D main.adb		20250520085832 125dc48d main%b
+D locker.ads		20250521031720 659a9cc6 locker%s
+D lockmemory.ads	20250521051000 ce94dfe5 lockmemory%s
+D main.adb		20250521052518 4812fec9 main%b
 D memorystore.ads	20250513130918 44057d61 memorystore%s
 D mycommandline.ads	20250513130918 dbf720e9 mycommandline%s
 D mystring.ads		20250513130918 ce083c8f mystring%s
 D mystring.adb		20250513130918 8198c1c4 mystring%b
 D mystringtokeniser.ads	20250515104322 9bc8f6ad mystringtokeniser%s
 D pin.ads		20250513130918 553c8633 pin%s
-D stack.ads		20250520085612 e00d97dd stack%s
+D stack.ads		20250521042512 d21861e8 stack%s
 D stringtointeger.ads	20250513132758 37c4f5b6 stringtointeger%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
@@ -66,63 +67,121 @@ D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
 D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
-D s-valint.ads		20190518041256 b5ff6963 system.val_int%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
 G a e
-G c Z b b [main standard 19 11 none]
-G r s stack_instance [main standard 19 11 none] [stack_instanceIP stack 28 9 none]
-G r c none [main standard 19 11 none] [init stack 16 14 none]
-G r c none [main standard 19 11 none] [push stack 18 14 none]
-G r c none [main standard 19 11 none] [push2 stack 20 14 none]
-G r c none [main standard 19 11 none] [pop stack 22 14 none]
-G r c none [main standard 19 11 none] [pop2 stack 24 14 none]
+G c Z b b [main standard 21 11 none]
+G r s stack_instance [main standard 21 11 none] [stack_instanceIP stack 29 9 none]
+G r s database [main standard 21 11 none] [databaseIP memorystore 48 9 none]
+G r c none [main standard 21 11 none] [init stack 20 14 none]
+G r c none [main standard 21 11 none] [init memorystore 18 14 none]
+G r c none [main standard 21 11 none] [from_string pin 5 13 none]
+G r c none [main standard 21 11 none] [init locker 9 14 none]
+G r c none [main standard 21 11 none] [add calculator 16 13 none]
+G r c none [main standard 21 11 none] [sub calculator 17 13 none]
+G r c none [main standard 21 11 none] [mul calculator 18 13 none]
+G r c none [main standard 21 11 none] [div calculator 19 13 none]
+G r c none [main standard 21 11 none] [pop stack 24 14 none]
+G r c none [main standard 21 11 none] [pop2 stack 25 14 none]
+G r c none [main standard 21 11 none] [push stack 22 14 none]
+G r c none [main standard 21 11 none] [push2 stack 23 14 none]
+G r c none [main standard 21 11 none] [print lockmemory 16 14 none]
+G r c none [main standard 21 11 none] [get lockmemory 8 14 none]
+G r c none [main standard 21 11 none] [put lockmemory 11 14 none]
+G r c none [main standard 21 11 none] [remove lockmemory 14 14 none]
+G r c none [main standard 21 11 none] [try_unlock locker 11 14 none]
+G r c none [main standard 21 11 none] [reset_pwd locker 13 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|13r6 13r22 14r6 14r31 15r6 16r6 33r9 38r31 39r29 40r29
+16K9*Ada 20e8 19|15r6 15r22 16r6 16r31 17r6 18r6
 X 4 a-comlin.ads
-36K13*Command_Line 144e21 17|16w10 33r13 38r35 39r33 40r33
-39V13*Argument_Count{natural} 17|33s26
-52V13*Argument{string} 17|38s48 39s46 40s46
+36K13*Command_Line 144e21 19|18w10
 X 6 a-inteio.ads
-18K13*Integer_Text_IO[12|46] 17|14w10 14r35
+18K13*Integer_Text_IO[12|46] 19|16w10 16r35
 X 8 a-llitio.ads
-18K13*Long_Long_Integer_Text_IO[12|46] 17|15w10
+18K13*Long_Long_Integer_Text_IO[12|46] 19|17w10
 X 11 a-textio.ads
-57K13*Text_IO 727e16 17|13w10 13r26
-508U14*Put_Line 17|34s9 46s13 48s13 53s13 55s13 60s13 62s16 67s13 69s16 72s11
+57K13*Text_IO 727e16 19|15w10 15r26
+508U14*Put_Line 19|51s4 57s4 64s4 83s4 92s4 98s4 105s4 106s4 112s4 115s4
+. 118s4 120s4 123s4 126s4 127s4 130s4
+X 12 a-tiinio.ads
+80U14*Put 19|75s4[6|18] 78s4[6|18] 119s4[6|18] 125s4[6|18]
 X 14 calculator.ads
-3K9*Calculator 19e15 17|10w6 21r21 22r22
-5I12*Int32{15|52I9} 17|21r32
-8R9*Result 12e14 17|22r33
+6K9*Calculator 22e15 19|10w6 23r21 24r22 46r9 47r9 48r9 49r9 52r9 53r9 54r9
+. 55r9 87r9 88r9 89r9 90r9 93r9 94r9 95r9 96r9
+8I12*Int32{15|52I9} 19|23r32
+11R9*Result 14e14 19|24r33
+16V13*Add{11R9} 19|46s20 52s20 87s20 93s20
+17V13*Sub{11R9} 19|47s20 53s20 88s20 94s20
+18V13*Mul{11R9} 19|48s20 54s20 89s20 95s20
+19V13*Div{11R9} 19|49s20 55s20 90s20 96s20
 X 15 interfac.ads
 52I9*Integer_32<integer>
-X 17 main.adb
-19U11*Main 19b11 76l5 76t9
-21I12 Int32{14|5I12} 25r11 39r17 40r17
-22R12 Result{14|8R9}
-24i4 Op_Code{integer} 38m6 42r11
-25i4 A{21I12} 39m6 44r23 51r24 58m22 65m23
-25i7 B{21I12} 40m6 51r26 65m25
-26r4 S{24|14R9} 31m17 44m21 44r21 51m22 51r22 58m20 58r20 65m21 65r21
-27b4 Success{boolean} 44m25 44r25 45r13 51m28 51r28 52r13 58m24 58r24 59r13
-. 65m27 65r27 66r13
-X 18 memorystore.ads
-3K9*MemoryStore 17|8w6 18|52e16
-X 19 mycommandline.ads
-8K9*MyCommandLine 17|3w6 19|17e18
-X 20 mystring.ads
-17k9*MyString 17|4w6 20|60e13
-X 22 mystringtokeniser.ads
-3K9*MyStringTokeniser 17|5w6 22|76e22
-X 23 pin.ads
-1K9*PIN 17|7w6 23|13e8
-X 24 stack.ads
-4K9*Stack 17|11w6 26r11 31r6 44r10 51r10 58r10 65r10 24|33e10
-14R9*Stack_Instance 17|26r17 24|31e14
-16U14*Init 17|31s12
-18U14*Push 17|44s16
-20U14*Push2 17|51s16
-22U14*Pop 17|58s16
-24U14*Pop2 17|65s16
-X 25 stringtointeger.ads
-3K9*StringToInteger 17|6w6 25|8e20
+X 17 locker.ads
+5K9*Locker 24e11 19|12w6 28r7 44r4 84r4 85r4 131r4 132r4 133r4 134r4
+7R9*Locker 22e14 19|28r14
+9U14*Init 19|44s11
+11U14*Try_Unlock 19|84s11 85s11 133s11 134s11
+13U14*Reset_PWD 19|131s11 132s11
+X 18 lockmemory.ads
+6K9*LockMemory 18e15 19|13w6 67r4 68r8 69r8 70r4 71r4 72r4 73r4 74r8 76r4
+. 77r8 79r4 107r4 109r8 110r8 111r4 113r4 114r4 116r4 117r8 121r4 122r4 124r8
+. 128r4
+8V14*Get{20|11I12} 19|68s19 69s19 74s19 77s19 109s19 110s19 117s19 124s19
+11U14*Put 19|70s15 72s15 111s15 114s15
+14U14*Remove 19|76s15 121s15 122s15
+16U14*Print 19|67s15 71s15 73s15 79s15 107s15 113s15 116s15 128s15
+X 19 main.adb
+21U11*Main 21b11 181l5 181t9
+23I12 Int32{14|8I12} 33r11 46r27 47r27 48r27 87r27 88r27 89r27
+24R12 Result{14|11R9} 29r8
+26b4 Success{boolean} 58m20 58r20 59m23 59r23 60m21 60r21 61m24 61r24 62m21
+. 62r21 63m21 63r21 99m20 99r20 100m23 100r23 101m21 101r21 102m24 102r24
+. 103m21 103r21 104m21 104r21
+28r4 L{17|7R9} 44m16 44r16 46r24 47r24 48r24 49r24 52r24 53r24 54r24 55r24
+. 58r14 59r15 60r15 61r16 62r15 63r15 67r21 68r23 69r23 70r19 71r21 72r19
+. 73r21 74r23 76r22 77r23 79r21 84m22 84r22 85m22 85r22 87r24 88r24 89r24
+. 90r24 93r24 94r24 95r24 96r24 99r14 100r15 101r15 102r16 103r15 104r15
+. 107r21 109r23 110r23 111r19 113r21 114r19 116r21 117r23 121r22 122r22 124r23
+. 128r21 131m21 131r21 132m21 132r21 133m22 133r22 134m22 134r22
+29r4 R{24R12} 46m4 47m4 48m4 49m4 52m4 53m4 54m4 55m4 87m4 88m4 89m4 90m4
+. 93m4 94m4 95m4 96m4
+31r4 S{26|18R9} 41m15 58m16 58r16 59m17 59r17 60m17 60r17 61m18 61r18 62m17
+. 62r17 63m17 63r17 99m16 99r16 100m17 100r17 101m17 101r17 102m18 102r18
+. 103m17 103r17 104m17 104r17
+33i4 A{23I12} 58m18 59m19 61r20 99m18 100m19 102r20
+33i6 B{23I12} 59m21 61r22 100m21 102r22
+33i8 C{23I12} 68m4 69m4 74m4 75r18 77m4 78r18 109m4 110m4 117m4 119r18 124m4
+. 125r17
+35r4 D{20|13R9} 42m21 67r23 68r25 69r25 70m21 70r21 71r23 72m21 72r21 73r23
+. 74r25 76m24 76r24 77r25 79r23 107r23 109r25 110r25 111m21 111r21 113r23
+. 114m21 114r21 116r23 117r25 121m24 121r24 122m24 122r24 124r25 128r23
+36i4 D_Index1{20|8I12} 68r27 70r23 74r27 76r26 77r27 109r27 111r23 117r27
+. 121r26 122r26 124r27
+37i4 D_Index2{20|8I12} 69r27 72r23 110r27 114r23
+X 20 memorystore.ads
+3K9*MemoryStore 19|8w6 35r7 36r15 37r15 42r4 20|52e16
+8I12*Location_Index{positive} 19|36r27 37r27
+11I12*Int32{15|52I9}
+13R9*Database 19|35r19 20|51e14
+18U14*Init 19|42s16
+X 21 mycommandline.ads
+8K9*MyCommandLine 19|3w6 21|17e18
+X 22 mystring.ads
+17k9*MyString 19|4w6 22|60e13
+X 24 mystringtokeniser.ads
+3K9*MyStringTokeniser 19|5w6 24|76e22
+X 25 pin.ads
+1K9*PIN 19|7w6 44r18 84r24 85r24 131r23 132r23 133r24 134r24 25|13e8
+3I9*PIN<integer>
+5V13*From_String{3I9} 19|44s22 84s28 85s28 131s27 132s27 133s28 134s28
+X 26 stack.ads
+7K9*Stack 19|11w6 31r6 41r4 58r4 59r4 60r4 61r4 62r4 63r4 99r4 100r4 101r4
+. 102r4 103r4 104r4 26|34e10
+18R9*Stack_Instance 19|31r12 26|32e14
+20U14*Init 19|41s10
+22U14*Push 19|60s10 62s10 63s10 101s10 103s10 104s10
+23U14*Push2 19|61s10 102s10
+24U14*Pop 19|58s10 99s10
+25U14*Pop2 19|59s10 100s10
+X 27 stringtointeger.ads
+3K9*StringToInteger 19|6w6 27|8e20
 

@@ -1,9 +1,13 @@
 pragma SPARK_Mode(On);
 with Interfaces;
+with Locker;
+with Ada.Text_IO;use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 package Stack is
    
    Max_Capacity : constant := 512;
+   --Max_Capacity : constant := 2;
 
    subtype Stack_Index is Positive range 1 .. Max_Capacity;
    subtype Int32 is Interfaces.Integer_32;
@@ -15,13 +19,10 @@ package Stack is
    
    procedure Init(S : out Stack_Instance);
 
-   procedure Push(S : in out Stack_Instance; A : Int32; Success : in out Boolean);
-
-   procedure Push2(S : in out Stack_Instance; A, B : Int32; Success : in out Boolean);
-
-   procedure Pop(S : in out Stack_Instance; A : out Int32; Success : in out Boolean);
-
-   procedure Pop2(S : in out Stack_Instance; A, B : out Int32; Success : in out Boolean);
+   procedure Push(L:Locker.Locker; S : in out Stack_Instance; A : Int32; Success : in out Boolean);
+   procedure Push2(L:Locker.Locker; S : in out Stack_Instance; A, B : Int32; Success : in out Boolean);
+   procedure Pop(L:Locker.Locker; S : in out Stack_Instance; A : out Int32; Success : in out Boolean);
+   procedure Pop2(L:Locker.Locker; S : in out Stack_Instance; A, B : out Int32; Success : in out Boolean);
    
 private
 
