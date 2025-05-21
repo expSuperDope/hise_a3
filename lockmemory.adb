@@ -1,0 +1,56 @@
+package body LockMemory is
+
+   function Get (L : Locker.Locker; D : MemoryStore.Database;
+                 Loc : MemoryStore.Location_Index) return MemoryStore.Int32 is
+   begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return 0;
+      end if;
+      
+      if not MemoryStore.Has(D, Loc) then
+         Put_Line("No value this location! Return 0");
+         return 0;
+      end if;
+      
+      return MemoryStore.Get(D, Loc);
+   end Get;
+
+   procedure Put (L : Locker.Locker; D : in out MemoryStore.Database;
+                  Loc : MemoryStore.Location_Index;
+                  Val : MemoryStore.Int32) is
+   begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return;
+      end if;
+
+      MemoryStore.Put(D, Loc, Val);
+   end Put;
+
+   procedure Remove (L : Locker.Locker; D : in out MemoryStore.Database;
+                     Loc : MemoryStore.Location_Index) is
+   begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return;
+      end if;
+      
+      if not MemoryStore.Has(D, Loc) then
+         Put_Line("No value this location! Remove nothing!");
+      end if;
+      
+      MemoryStore.Remove(D, Loc);
+   end Remove;
+
+   procedure Print (L : Locker.Locker; D : MemoryStore.Database) is
+   begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return;
+      end if;
+      
+      MemoryStore.Print(D);
+   end Print;
+
+end LockMemory;

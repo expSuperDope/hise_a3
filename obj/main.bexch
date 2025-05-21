@@ -4,12 +4,14 @@ b__main.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\default.gpr
 20250520064936
 [BOUND OBJECT FILES]
-C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\calculator.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\memorystore.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mycommandline.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystring.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystringtokeniser.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\pin.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\locker.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\calculator.o
+C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\lockmemory.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stack.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stringtointeger.o
 C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\main.o

@@ -3,51 +3,80 @@ use type Calculator.Int32;
 
 package body Calculator with SPARK_Mode is
     
-   function  Add(A, B: Int32) return Result is 
+   function  Add(L: Locker.Locker; A, B: Int32) return Result is 
       V: Int64 := Int64(A) + Int64(B);
    begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return (Success=>False, Value=>0);
+      end if;
+           
       if(V < Int64(Int32'First) or else V > Int64(Int32'Last)) then
-         return (Success=> False, Div_Zero => False, Value => 0);
+         Put_Line("Results overflows!");
+         return (Success=>False, Value=>0);
       else
-         return (Success=> True,  Div_Zero => False, Value => Int32(V));
+         Put_Line("Result: " & Int32'Image(A) & " + " & Int32'Image(B) & " = " & Int64'Image(V));
+         return (Success=>True,  Value=>Int32(V));
       end if;
    end Add;
      
    
-   function  Sub(A, B: Int32) return Result is 
+   function  Sub(L: Locker.Locker; A, B: Int32) return Result is 
       V: Int64 := Int64(A) - Int64(B);
    begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return (Success=>False, Value=>0);
+      end if;
+        
       if(V < Int64(Int32'First) or else V > Int64(Int32'Last)) then
-         return (Success=> False, Div_Zero => False, Value => 0);
+         Put_Line("Results overflows!");
+         return (Success=>False, Value=>0);
       else
-         return (Success=> True,  Div_Zero => False, Value => Int32(V));
+         Put_Line("Result: " & Int32'Image(A) & " - " & Int32'Image(B) & " = " & Int64'Image(V));
+         return (Success=>True,  Value=>Int32(V));
       end if;
    end Sub;
    
    
-   function  Mul(A, B: Int32) return Result is 
+   function  Mul(L: Locker.Locker; A, B: Int32) return Result is 
       V: Int64 := Int64(A) * Int64(B);
    begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return (Success=>False, Value=>0);
+      end if;
+      
       if(V < Int64(Int32'First) or else V > Int64(Int32'Last)) then
-         return (Success=> False, Div_Zero => False, Value => 0);
+         Put_Line("Results overflows!");
+         return (Success=>False, Value=>0);
       else
-         return (Success=> True,  Div_Zero => False, Value => Int32(V));
+         Put_Line("Result: " & Int32'Image(A) & " * " & Int32'Image(B) & " = " & Int64'Image(V));
+         return (Success=>True, Value=>Int32(V));
       end if;
    end Mul;
    
    
-   function  Div(A, B: Int32) return Result is 
+   function  Div(L: Locker.Locker; A, B: Int32) return Result is 
       V: Int64 := 0;
    begin
+      if Locker.Is_Locked(L) then
+         Put_Line("Locked!");
+         return (Success=>False, Value=>0);
+      end if;
+        
       if B = 0 then
-         return (Success => False, Value => 0, Div_Zero => True);
+         Put_Line("Div 0!");
+         return (Success=>False, Value=>0);
       end if;
       
       V := Int64(A) / Int64(B);
       if(V < Int64(Int32'First) or else V > Int64(Int32'Last)) then
-         return (Success=> False, Div_Zero => False, Value => 0);
+         Put_Line("Results overflows!");
+         return (Success=> False, Value => 0);
       else
-         return (Success=> True,  Div_Zero => False, Value => Int32(V));
+         Put_Line("Result: " & Int32'Image(A) & " / " & Int32'Image(B) & " = " & Int64'Image(V));
+         return (Success=>True, Value=>Int32(V));
       end if;
    end Div;
    
