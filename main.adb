@@ -35,13 +35,50 @@ procedure Main is
    D: MemoryStore.Database;
    D_Index1 : MemoryStore.Location_Index:= 1;
    D_Index2 : MemoryStore.Location_Index:= 10;
+   
+   Line : String (1 .. 200);
+   Last : Natural;
        
 begin
+ 
+   if MyCommandLine.Argument_Count /= 1 then
+     Put_Line("Please provide a single 4-digits PIN.");
+     return;
+   end if;
    
+   declare
+      PIN_Str : constant String := MyCommandLine.Argument(1);
+   begin
+      if PIN_Str'Length /= 4 or else
+        (for some I in PIN_Str'Range => PIN_Str(I) not in '0' .. '9') then
+         Put_Line("Please provide a single 4-digits PIN.");
+         return;
+      else 
+         Locker.Init(L,PIN.From_String(PIN_Str));
+      end if;
+   end;
+
    Stack.Init(S);
    MemoryStore.Init(D);
    
-   Locker.Init(L,PIN.From_String("1234"));
+   loop
+      if(Locker.Is_Locked(L)) then
+         Put("locked> ");             
+      else 
+         Put("unlocked> "); 
+      end if;
+      
+      Get_Line(Line, Last);     
+
+      if Line(1 .. Last) = "quit" then
+         exit;
+      end if;
+
+      Put_Line("You entered: " & Line(1 .. Last));
+   end loop;
+
+
+   
    
    R := Calculator.Add(L, Int32'Last, 1);
    R := Calculator.Sub(L, Int32'First, 1);
@@ -132,50 +169,5 @@ begin
    Locker.Reset_PWD(L,PIN.From_String("1234"));
    Locker.Try_Unlock(L,PIN.From_String("4321"));
    Locker.Try_Unlock(L,PIN.From_String("4321"));
-   
---       Stack.Init(s);
-   
---       if Ada.Command_Line.Argument_Count /= 3 then
---          Put_Line("Usage: ./main <op> <a> <b>");
---          return;
---       end if;
---   
---       Op_Code := Integer'Value(Ada.Command_Line.Argument(1));
---       A       := Int32'Value(Ada.Command_Line.Argument(2));
---       B       := Int32'Value(Ada.Command_Line.Argument(3));
---   
---       case Op_Code is
---         when 1 =>
---           Stack.Push(S,A,Success);
---           if Success then
---              Put_Line("Result: Push Successfully");
---           else
---              Put_Line("Not enough space");
---           end if;
---         when 2 =>
---           Stack.Push2(S,A,B,Success);
---           if Success then
---              Put_Line("Result: Push2 Successfully");
---           else
---              Put_Line("Not enough space");
---           end if;
---         when 3 =>
---           Stack.Pop(S,A,Success);
---           if Success then
---              Put_Line("Result: Pop Successfully");
---           else
---                 Put_Line("Not enough number");
---           end if;
---         when 4 =>
---           Stack.Pop2(S,A,B,Success);
---           if Success then
---              Put_Line("Result: Pop2 Successfully");
---           else
---                 Put_Line("Not enough number");
---           end if;
---         when others =>
---            Put_Line("Invalid operation code.");
---            return;
---    end case;
       
 end Main;
