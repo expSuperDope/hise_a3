@@ -1,3 +1,5 @@
+pragma SPARK_Mode (On);
+
 use type Calculator.Int64;
 use type Calculator.Int32;
 

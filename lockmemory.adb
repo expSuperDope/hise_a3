@@ -1,3 +1,5 @@
+pragma SPARK_Mode (On);
+
 package body LockMemory is
 
    function Get (L : Locker.Locker; D : MemoryStore.Database;
@@ -8,7 +10,6 @@ package body LockMemory is
       end if;
       
       if not MemoryStore.Has(D, Loc) then
-         Put_Line("No number this location!");
          return 0;
       end if;
       

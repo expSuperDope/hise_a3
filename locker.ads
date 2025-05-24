@@ -5,7 +5,7 @@ use type PIN.PIN;
 package Locker is
 
    type Locker is private;
-
+   
    procedure Init(L : in out Locker; N : PIN.PIN);
 
    procedure Try_Unlock(L : in out Locker; N : PIN.PIN);

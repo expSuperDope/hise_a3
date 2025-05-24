@@ -3,7 +3,7 @@ with PIN;
 with Ada.Text_IO; use Ada.Text_IO;
 
 package body Locker is
-
+ 
    procedure Init(L : in out Locker; N : PIN.PIN) is
    begin
       L.Number := N;
