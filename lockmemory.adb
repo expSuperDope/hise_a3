@@ -8,6 +8,7 @@ package body LockMemory is
       end if;
       
       if not MemoryStore.Has(D, Loc) then
+         Put_Line("No number this location!");
          return 0;
       end if;
       
