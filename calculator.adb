@@ -1,3 +1,5 @@
+pragma SPARK_Mode (On);
+
 use type Calculator.Int64;
 use type Calculator.Int32;
 
@@ -49,7 +51,7 @@ package body Calculator with SPARK_Mode is
    
    
    function  Div(L: Locker.Locker; A, B: Int32) return Result is 
-      V: Int64 := 0;
+      V: Int64;
    begin
       if Locker.Is_Locked(L) then
          return (Success=>False, Value=>0);

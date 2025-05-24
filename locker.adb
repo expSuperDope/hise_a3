@@ -4,10 +4,9 @@ with Ada.Text_IO; use Ada.Text_IO;
 
 package body Locker is
 
-   procedure Init(L : in out Locker; N : PIN.PIN) is
+   function Init(N : PIN.PIN) return Locker is
    begin
-      L.Number := N;
-      L.Locked := True;  
+      return (Number => N, Locked => True);
    end Init;
 
    procedure Try_Unlock(L : in out Locker; N : PIN.PIN) is

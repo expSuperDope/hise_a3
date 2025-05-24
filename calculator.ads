@@ -1,3 +1,5 @@
+pragma SPARK_Mode (On);
+
 with Interfaces;
 with Locker;
 with Ada.Text_IO;use Ada.Text_IO;
@@ -13,10 +15,17 @@ package Calculator with SPARK_Mode is
       Value     :Int32;
    end record;
 
-   function Add (L: Locker.Locker; A, B : Int32) return Result;
-   function Sub (L: Locker.Locker; A, B : Int32) return Result;
-   function Mul (L: Locker.Locker; A, B : Int32) return Result;
-   function Div (L: Locker.Locker; A, B : Int32) return Result;
+   function Add (L: Locker.Locker; A, B : Int32) return Result
+     with Pre => not Locker.Is_Locked(L);
+   
+   function Sub (L: Locker.Locker; A, B : Int32) return Result
+     with Pre => not Locker.Is_Locked(L);
+   
+   function Mul (L: Locker.Locker; A, B : Int32) return Result
+     with Pre => not Locker.Is_Locked(L);
+   
+   function Div (L: Locker.Locker; A, B : Int32) return Result
+     with Pre => not Locker.Is_Locked(L);
 
 
 end calculator;
