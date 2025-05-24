@@ -1,2 +1,0 @@
-main.adb:28:25: error: expected private type "Locker" defined at locker.ads:7
-main.adb:28:25: error: found a composite type
