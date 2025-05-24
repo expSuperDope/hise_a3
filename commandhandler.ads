@@ -1,3 +1,5 @@
+pragma SPARK_Mode (On);
+
 with Locker, Stack, Calculator, LockMemory, MemoryStore;
 with MyString;
 with MyString_Instance;

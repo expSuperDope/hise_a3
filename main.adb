@@ -25,7 +25,7 @@ procedure Main is
    subtype Int32 is Calculator.Int32;
    subtype Result is calculator.Result;
 
-   L:  Locker.Locker := (Number => 0, Locked => True);
+   L: Locker.Locker;
    S: Lines.MyString;
    Sk:Stack.Stack_Instance;
    D: MemoryStore.Database;  
@@ -44,11 +44,10 @@ begin
         (for some I in PIN_Str'Range => PIN_Str(I) not in '0' .. '9') then
          Put_Line("Please provide a single 4-digits PIN.");
          return;
-      else 
-         Locker.Init(L,PIN.From_String(PIN_Str));
       end if;
    end;
-
+   
+   L:= Locker.Init(PIN.From_String(MyCommandLine.Argument(1)));
    Stack.Init(Sk);
    MemoryStore.Init(D);
    

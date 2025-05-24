@@ -1,3 +1,5 @@
+pragma SPARK_Mode (On);
+
 with CommandHandler;
 with MyStringTokeniser;
 with MyString_Instance; use MyString_Instance;
@@ -42,8 +44,8 @@ package body CommandHandler with SPARK_Mode is
 
             declare
                R : Result;
-               A, B : Int32 := 0;
-               Success : Boolean := False;
+               A, B : Int32;
+               Success : Boolean;
             begin
                Stack.Pop2(L, Sk, A, B, Success);
                if not Success then
@@ -65,9 +67,15 @@ package body CommandHandler with SPARK_Mode is
 
                   if R.Success then
                      Stack.Push(L, Sk, R.Value, Success);
+                     if not Success then
+                        Put_Line("Write failed!");
+                     end if;
                   else
                      Put_Line("Operation failed! Overflow or divide by zero.");
                      Stack.Push2(L, Sk, A, B, Success);
+                     if not Success then
+                        Put_Line("Write failed!");
+                     end if;
                   end if;
                end if;
             end;
@@ -86,7 +94,7 @@ package body CommandHandler with SPARK_Mode is
             declare
                Token2 : Integer := StringToInteger.From_String(
                  Lines.To_String(Lines.Substring(S, T(2).Start, T(2).Start + T(2).Length - 1)));
-               Success : Boolean := False;
+               Success : Boolean;
             begin
                Stack.Push(L, Sk, Int32(Token2), Success);
                if Success then
@@ -112,7 +120,7 @@ package body CommandHandler with SPARK_Mode is
                  Lines.To_String(Lines.Substring(S, T(2).Start, T(2).Start + T(2).Length - 1)));
                Token3 : Integer := StringToInteger.From_String(
                  Lines.To_String(Lines.Substring(S, T(3).Start, T(3).Start + T(3).Length - 1)));
-               Success : Boolean := False;
+               Success : Boolean;
             begin
                Stack.Push2(L, Sk, Int32(Token2), Int32(Token3), Success);
                if Success then
@@ -134,8 +142,8 @@ package body CommandHandler with SPARK_Mode is
             end if;
 
             declare
-               A : Int32 := 0;
-               Success : Boolean := False;
+               A : Int32;
+               Success : Boolean;
             begin
                Stack.Pop(L, Sk, A, Success);
                if Success then
@@ -159,8 +167,8 @@ package body CommandHandler with SPARK_Mode is
             declare
                Token2 : Integer := StringToInteger.From_String(
                  Lines.To_String(Lines.Substring(S, T(2).Start, T(2).Start + T(2).Length - 1)));
-               A : Int32 := 0;
-               Success : Boolean := False;
+               A : Int32;
+               Success : Boolean;
             begin
                if Token2 < 1 or else Token2 > MemoryStore.Max_Locations then
                   Put_Line("Invalid memory location!");
@@ -189,8 +197,8 @@ package body CommandHandler with SPARK_Mode is
             declare
                Token2 : Integer := StringToInteger.From_String(
                  Lines.To_String(Lines.Substring(S, T(2).Start, T(2).Start + T(2).Length - 1)));
-               A : Int32 := 0;
-               Success : Boolean := False;
+               A : Int32;
+               Success : Boolean;
             begin
                if Token2 < 1 or else Token2 > MemoryStore.Max_Locations then
                   Put_Line("Invalid memory location!");

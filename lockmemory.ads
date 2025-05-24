@@ -16,9 +16,10 @@ package LockMemory is
      with Pre => not Locker.Is_Locked(L);
    
    procedure Remove (L:Locker.Locker; D: in out MemoryStore.Database; Loc: in MemoryStore.Location_Index)
-   with Pre => not Locker.Is_Locked(L);
+     with Pre => not Locker.Is_Locked(L);
    
    procedure Print  (L:Locker.Locker; D: MemoryStore.Database)
-   with Pre => not Locker.Is_Locked(L);
+     with Pre => not Locker.Is_Locked(L);
+   
 
 end LockMemory;

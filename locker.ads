@@ -6,11 +6,13 @@ package Locker is
 
    type Locker is private;
    
-   procedure Init(L : in out Locker; N : PIN.PIN);
+   function Init(N : PIN.PIN) return Locker;
 
-   procedure Try_Unlock(L : in out Locker; N : PIN.PIN);
-
-   procedure Reset_PWD(L : in out Locker; N : PIN.PIN);
+   procedure Try_Unlock(L : in out Locker; N : PIN.PIN)
+    with pre => Is_Locked(L);
+   
+   procedure Reset_PWD(L : in out Locker; N : PIN.PIN)
+    with pre => not Is_Locked(L);
      
    function Is_Locked(L : Locker) return Boolean;
 
