@@ -43,6 +43,7 @@ package body LockMemory is
          return;
       end if;
       
+      Put_Line("Memory list:");
       MemoryStore.Print(D);
    end Print;
 
