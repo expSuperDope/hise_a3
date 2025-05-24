@@ -1,0 +1,7 @@
+commandhandler.adb:45:16: warning: initialization of "A" has no effect[#0]
+commandhandler.adb:45:16: warning: initialization of "B" has no effect[#1]
+commandhandler.adb:67:49: warning: "Success" is set by "Push" but not used after the call[#2]
+commandhandler.adb:70:47: warning: "Success" is set by "Push2" but not used after the call[#3]
+commandhandler.adb:137:16: warning: initialization of "A" has no effect[#4]
+commandhandler.adb:162:16: warning: initialization of "A" has no effect[#5]
+commandhandler.adb:192:16: warning: initialization of "A" has no effect[#6]

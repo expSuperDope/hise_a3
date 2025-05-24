@@ -67,3 +67,35 @@
     '
   output_parser: GNATprove_Parser
   timestamp: '2025-05-24T16:30:12.067000'
+'2025-05-24T16:38:46.153000':
+  category: GNATprove
+  files:
+  - C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    main.adb:28:25: error: expected private type "Locker" defined at locker.ads:7
+
+    main.adb:28:25: error: found a composite type
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2025-05-24T16:38:46.153000'
+'2025-05-24T16:39:19.113000':
+  category: GNATprove
+  files:
+  - C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    main.adb:28:25: error: expected private type "Locker" defined at locker.ads:7
+
+    main.adb:28:25: error: found a composite type
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2025-05-24T16:39:19.113000'

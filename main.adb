@@ -25,7 +25,7 @@ procedure Main is
    subtype Int32 is Calculator.Int32;
    subtype Result is calculator.Result;
 
-   L: Locker.Locker;
+   L:  Locker.Locker := (Number => 0, Locked => True);
    S: Lines.MyString;
    Sk:Stack.Stack_Instance;
    D: MemoryStore.Database;  
