@@ -215,7 +215,11 @@ begin
                   Success: Boolean := False;
                begin
                   Stack.Push(L,Sk,Int32(Token2),Success);
-                  Put_Line("Push: " & Integer'Image(Token2));
+                  if Success then
+                     Put_Line("Push: " & Integer'Image(Token2));
+                  else
+                     Put_Line("Full stack!");
+                  end if;
                end;
 
             elsif Token1 = "push2" then
@@ -237,7 +241,11 @@ begin
                   Success: Boolean := False;
                begin
                   Stack.Push2(L,Sk,Int32(Token2),Int32(Token3),Success);
-                  Put_Line("Push: " & Integer'Image(Token2) & " and " & Integer'Image(Token3));
+                  if Success then
+                     Put_Line("Push: " & Integer'Image(Token2) & " and " & Integer'Image(Token3));
+                  else
+                     Put_Line("Full stack!");
+                  end if;
                end;
 
             elsif Token1 = "pop" then
@@ -256,7 +264,11 @@ begin
                   Success: Boolean := False;
                begin 
                   Stack.Pop(L,Sk,A,Success);
-                  Put_Line("Pop: " & Int32'Image(A));
+                  if Success then
+                     Put_Line("Pop: " & Int32'Image(A));
+                  else
+                     Put_Line("Empty stack!");
+                  end if;
                end;
                
                
@@ -285,9 +297,8 @@ begin
                      if(Success) then
                         Put_Line("Load " & Int32'Image(A) & " successfully!");
                      else
-                        Put_Line("Load failed");
-                     end if;
-                     
+                        Put_Line("Load failed! Full stack!");
+                     end if;  
                   end if;
                end;
      
@@ -316,7 +327,6 @@ begin
                         Put_Line("No elements in stack!");
                      else
                         LockMemory.Put(L,D,MemoryStore.Location_Index(Token2),MemoryStore.Int32(A));
-                        Stack.Push(L,Sk,A,Success);
                         Put_Line("Store successfully!");
                      end if;
                   end if;
