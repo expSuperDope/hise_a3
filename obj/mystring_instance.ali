@@ -1,0 +1,73 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U mystring_instance%s	mystring_instance.ads	1e8d1e39 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+W mystring%s		mystring.adb		mystring.ali  ED
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D mystring.ads		20250524050806 ce083c8f mystring%s
+D mystring.adb		20250524050806 8198c1c4 mystring%b
+D mystring_instance.ads	20250524055616 d08522b6 mystring_instance%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c s s s [s mystring_instance 3 1 none]
+G c Z s s [to_string mystring_instance__lines 20 13 4_4]
+G c Z s s [from_string mystring_instance__lines 24 13 4_4]
+G c Z s s [less mystring_instance__lines 28 13 4_4]
+G c Z s s [equal mystring_instance__lines 30 13 4_4]
+G c Z s s [length mystring_instance__lines 35 13 4_4]
+G c Z s s [substring mystring_instance__lines 38 13 4_4]
+G c Z s s [get mystring_instance__lines 42 13 4_4]
+G c Z s s [get_line mystring_instance__lines 45 14 4_4]
+G c Z s s [TmystringstrBIP mystring_instance__lines 48 4 4_4]
+G c Z s s [mystringIP mystring_instance__lines 49 9 4_4]
+G r i none [s mystring_instance 3 1 none] [mystring standard 17 9 none]
+X 13 mystring.ads
+14i4 Max_MyString_Length{positive} 15|4r35
+17k9*MyString 60e13 15|1w6 4r25
+X 15 mystring_instance.ads
+3K9*MyString_Instance 5l5 5e22
+4K12*Lines[13|17]
+

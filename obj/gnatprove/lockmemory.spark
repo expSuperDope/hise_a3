@@ -1,0 +1,62 @@
+{
+  "spark": [
+    {
+      "name": "LockMemory.Get",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 8
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "LockMemory.Put",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 11
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "LockMemory.Remove",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 14
+        }
+      ],
+      "spark": "no"
+    },
+    {
+      "name": "LockMemory.Print",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 16
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "codepeer results": 2.49000004259869E-05,
+    "init_why_sections": 1.17619999218732E-03,
+    "globals (advanced)": 7.18891993165016E-02,
+    "flow analysis": 2.30100005865097E-04,
+    "marking": 2.32100006542169E-04,
+    "translation of standard": 7.22800008952618E-03,
+    "properties (advanced)": 4.94000014441554E-05,
+    "globals (basic)": 6.17174990475178E-02
+  }
+}

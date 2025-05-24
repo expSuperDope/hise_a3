@@ -1,0 +1,890 @@
+(* Module for axiomatizing type "pin" defined at pin.ads:11, created in Gnat2Why.Types.Translate_Type *)
+module Pin__pin
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type pin  = <range 0 9999>
+  
+  function   first () requires { True } ensures  { True } returns int = 0
+  
+  function   last () requires { True } ensures  { True } returns int = 9999
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = pin,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type pin__ref  = { mutable pin__content : pin }
+  
+  function   pin__ref_pin__content__projection (a : pin__ref) requires {  }
+    ensures  {  } returns pin = a.pin__content
+  
+  meta model_projection function pin__ref_pin__content__projection
+  
+  meta inline:no function pin__ref_pin__content__projection
+  
+  function   pin__havoc (x : pin__ref) requires {  } ensures  {  } returns
+    unit
+
+end
+
+(* Module defining to_rep/of_rep for type "pin" defined at pin.ads:11, created in Gnat2Why.Types.Translate_Type *)
+module Pin__pin__rep
+  
+  use        Pin__pin
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function   to_rep (x : Pin__pin.pin) requires { True } ensures  { True }
+    returns int = (Pin__pin.pin'int x)
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Pin__pin.pin,
+    predicate in_range = Pin__pin.in_range, function to_rep = to_rep
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing the record theory associated to type "locker" defined at locker.ads:19, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+module Locker__locker__rep
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        _gnatprove_standard.Boolean
+  use        Pin__pin
+  use        Pin__pin__rep
+  
+  type __split_fields  = { [name:Number]
+                           [model_trace:.1973]rec__locker__locker__number : Pin__pin.pin;
+                           [model_trace:.1980]
+                           [name:Locked]rec__locker__locker__locked : bool }
+  
+  function [name:Number] [model_trace:.1973] 
+    __split_fields_rec__locker__locker__number__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Pin__pin.pin = a.rec__locker__locker__number
+  
+  meta model_projection function __split_fields_rec__locker__locker__number__projection
+  
+  meta inline:no function __split_fields_rec__locker__locker__number__projection
+  
+  function [model_trace:.1980] [name:Locked] 
+    __split_fields_rec__locker__locker__locked__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    bool = a.rec__locker__locker__locked
+  
+  meta model_projection function __split_fields_rec__locker__locker__locked__projection
+  
+  meta inline:no function __split_fields_rec__locker__locker__locked__projection
+  
+  type __split_fields__ref  = { mutable __split_fields__content : __split_fields }
+  
+  function   __split_fields__ref___split_fields__content__2__projection
+    (a : __split_fields__ref) requires {  } ensures  {  } returns
+    __split_fields = a.__split_fields__content
+  
+  meta model_projection function __split_fields__ref___split_fields__content__2__projection
+  
+  meta inline:no function __split_fields__ref___split_fields__content__2__projection
+  
+  function   __split_fields__havoc (x : __split_fields__ref) requires {  }
+    ensures  {  } returns unit
+  
+  type __rep  = { __split_fields : __split_fields }
+  
+  function   __rep___split_fields__2__projection (a : __rep) requires {  }
+    ensures  {  } returns __split_fields = a.__split_fields
+  
+  meta model_projection function __rep___split_fields__2__projection
+  
+  meta inline:no function __rep___split_fields__2__projection
+  
+  function   to_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   of_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   locker__locker__number__pred (a : __rep) requires { True }
+    ensures  { True } returns  = True
+  
+  function   rec__locker__locker__number_ (a : __rep) requires
+    { (locker__locker__number__pred a) } ensures 
+    { (result = a.__split_fields.rec__locker__locker__number) } returns
+    Pin__pin.pin
+  
+  function   locker__locker__locked__pred (a : __rep) requires { True }
+    ensures  { True } returns  = True
+  
+  function   rec__locker__locker__locked_ (a : __rep) requires
+    { (locker__locker__locked__pred a) } ensures 
+    { (result = a.__split_fields.rec__locker__locker__locked) } returns bool
+  
+  function   bool_eq (a : __rep b : __rep) requires { True } ensures 
+    { True } returns
+    bool = (if
+           (((Pin__pin__rep.to_rep
+                a.__split_fields.rec__locker__locker__number)
+               = (Pin__pin__rep.to_rep
+                    b.__split_fields.rec__locker__locker__number)) /\
+              ((_gnatprove_standard.Boolean.to_int
+                  a.__split_fields.rec__locker__locker__locked)
+                 = (_gnatprove_standard.Boolean.to_int
+                      b.__split_fields.rec__locker__locker__locked)))
+           then True  else False)
+
+end
+
+(* Module for axiomatizing type "locker" defined at locker.ads:19, created in Gnat2Why.Types.Translate_Type *)
+module Locker__locker
+  
+  use export Locker__locker__rep
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type locker  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  function   value__size () requires {  } ensures  {  } returns int
+  
+  function   object__size () requires {  } ensures  {  } returns int
+  
+  function   alignment () requires {  } ensures  {  } returns int
+  
+  axiom value__size_axiom : ((value__size ) >= 0)
+  
+  axiom object__size_axiom : ((object__size ) >= 0)
+  
+  axiom alignment_axiom : ((alignment ) >= 0)
+  
+  function   locker__locker__number__first__bit () requires {  } ensures 
+    {  } returns int
+  
+  function   locker__locker__number__last__bit () requires {  } ensures  {  }
+    returns int
+  
+  function   locker__locker__number__position () requires {  } ensures  {  }
+    returns int
+  
+  axiom locker__locker__number__first__bit_axiom : ((locker__locker__number__first__bit
+                                                       ) >= 0)
+  
+  axiom locker__locker__number__last__bit_axiom : ((locker__locker__number__last__bit
+                                                      )
+                                                     > (locker__locker__number__first__bit
+                                                          ))
+  
+  axiom locker__locker__number__position_axiom : ((locker__locker__number__position
+                                                     ) >= 0)
+  
+  function   locker__locker__locked__first__bit () requires {  } ensures 
+    {  } returns int
+  
+  function   locker__locker__locked__last__bit () requires {  } ensures  {  }
+    returns int
+  
+  function   locker__locker__locked__position () requires {  } ensures  {  }
+    returns int
+  
+  axiom locker__locker__locked__first__bit_axiom : ((locker__locker__locked__first__bit
+                                                       ) >= 0)
+  
+  axiom locker__locker__locked__last__bit_axiom : ((locker__locker__locked__last__bit
+                                                      )
+                                                     > (locker__locker__locked__first__bit
+                                                          ))
+  
+  axiom locker__locker__locked__position_axiom : ((locker__locker__locked__position
+                                                     ) >= 0)
+  
+  function   user_eq (a : locker b : locker) requires { True } ensures 
+    { True } returns bool
+  
+  function   dummy () requires {  } ensures  {  } returns locker
+  
+  type locker__ref  = { mutable locker__content : locker }
+  
+  function   locker__ref_locker__content__projection (a : locker__ref)
+    requires {  } ensures  {  } returns locker = a.locker__content
+  
+  meta model_projection function locker__ref_locker__content__projection
+  
+  meta inline:no function locker__ref_locker__content__projection
+  
+  function   locker__havoc (x : locker__ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module for axiomatizing type "int32" defined at calculator.ads:8, created in Gnat2Why.Types.Translate_Type *)
+module Calculator__int32
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type int32  = <range -2147483648 2147483647>
+  
+  function   first () requires { True } ensures  { True } returns
+    int = -2147483648
+  
+  function   last () requires { True } ensures  { True } returns
+    int = 2147483647
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = int32,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type int32__ref  = { mutable int32__content : int32 }
+  
+  function   int32__ref_int32__content__projection (a : int32__ref) requires
+    {  } ensures  {  } returns int32 = a.int32__content
+  
+  meta model_projection function int32__ref_int32__content__projection
+  
+  meta inline:no function int32__ref_int32__content__projection
+  
+  function   int32__havoc (x : int32__ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module defining to_rep/of_rep for type "int32" defined at calculator.ads:8, created in Gnat2Why.Types.Translate_Type *)
+module Calculator__int32__rep
+  
+  use        Calculator__int32
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function   to_rep (x : Calculator__int32.int32) requires { True } ensures 
+    { True } returns int = (Calculator__int32.int32'int x)
+  
+  clone export ada__model.Rep_Proj_Int with axiom . type t = Calculator__int32.int32,
+    predicate in_range = Calculator__int32.in_range, function to_rep = to_rep
+  
+  meta model_projection function to_rep
+  
+  meta inline:no function to_rep
+
+end
+
+(* Module for axiomatizing the record theory associated to type "result" defined at calculator.ads:11, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+module Calculator__result__rep
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        _gnatprove_standard.Boolean
+  use        Calculator__int32
+  use        Calculator__int32__rep
+  
+  type __split_fields  = { [name:Success]
+                           [model_trace:.1187]rec__calculator__result__success : bool;
+                           [model_trace:.1192]
+                           [name:Value]rec__calculator__result__value : Calculator__int32.int32 }
+  
+  function [name:Success] [model_trace:.1187] 
+    __split_fields_rec__calculator__result__success__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    bool = a.rec__calculator__result__success
+  
+  meta model_projection function __split_fields_rec__calculator__result__success__projection
+  
+  meta inline:no function __split_fields_rec__calculator__result__success__projection
+  
+  function [model_trace:.1192] [name:Value] 
+    __split_fields_rec__calculator__result__value__projection
+    (a : __split_fields) requires {  } ensures  {  } returns
+    Calculator__int32.int32 = a.rec__calculator__result__value
+  
+  meta model_projection function __split_fields_rec__calculator__result__value__projection
+  
+  meta inline:no function __split_fields_rec__calculator__result__value__projection
+  
+  type __split_fields__ref  = { mutable __split_fields__content : __split_fields }
+  
+  function   __split_fields__ref___split_fields__content__projection
+    (a : __split_fields__ref) requires {  } ensures  {  } returns
+    __split_fields = a.__split_fields__content
+  
+  meta model_projection function __split_fields__ref___split_fields__content__projection
+  
+  meta inline:no function __split_fields__ref___split_fields__content__projection
+  
+  function   __split_fields__havoc (x : __split_fields__ref) requires {  }
+    ensures  {  } returns unit
+  
+  type __rep  = { __split_fields : __split_fields }
+  
+  function   __rep___split_fields__projection (a : __rep) requires {  }
+    ensures  {  } returns __split_fields = a.__split_fields
+  
+  meta model_projection function __rep___split_fields__projection
+  
+  meta inline:no function __rep___split_fields__projection
+  
+  function   to_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   of_base (a : __rep) requires { True } ensures  { True } returns
+    __rep = a
+  
+  function   calculator__result__success__pred (a : __rep) requires { True }
+    ensures  { True } returns  = True
+  
+  function   rec__calculator__result__success_ (a : __rep) requires
+    { (calculator__result__success__pred a) } ensures 
+    { (result = a.__split_fields.rec__calculator__result__success) } returns
+    bool
+  
+  function   calculator__result__value__pred (a : __rep) requires { True }
+    ensures  { True } returns  = True
+  
+  function   rec__calculator__result__value_ (a : __rep) requires
+    { (calculator__result__value__pred a) } ensures 
+    { (result = a.__split_fields.rec__calculator__result__value) } returns
+    Calculator__int32.int32
+  
+  function   bool_eq (a : __rep b : __rep) requires { True } ensures 
+    { True } returns
+    bool = (if
+           (((_gnatprove_standard.Boolean.to_int
+                a.__split_fields.rec__calculator__result__success)
+               = (_gnatprove_standard.Boolean.to_int
+                    b.__split_fields.rec__calculator__result__success)) /\
+              ((Calculator__int32__rep.to_rep
+                  a.__split_fields.rec__calculator__result__value)
+                 = (Calculator__int32__rep.to_rep
+                      b.__split_fields.rec__calculator__result__value)))
+           then True  else False)
+
+end
+
+(* Module for axiomatizing type "result" defined at calculator.ads:11, created in Gnat2Why.Types.Translate_Type *)
+module Calculator__result
+  
+  use export Calculator__result__rep
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type result__  = --pp_transparent_type_definition NOT IMPLEMENTED
+  
+  function   value__size () requires {  } ensures  {  } returns int
+  
+  function   object__size () requires {  } ensures  {  } returns int
+  
+  function   alignment () requires {  } ensures  {  } returns int
+  
+  axiom value__size_axiom : ((value__size ) >= 0)
+  
+  axiom object__size_axiom : ((object__size ) >= 0)
+  
+  axiom alignment_axiom : ((alignment ) >= 0)
+  
+  function   calculator__result__success__first__bit () requires {  }
+    ensures  {  } returns int
+  
+  function   calculator__result__success__last__bit () requires {  } ensures 
+    {  } returns int
+  
+  function   calculator__result__success__position () requires {  } ensures 
+    {  } returns int
+  
+  axiom calculator__result__success__first__bit_axiom : ((calculator__result__success__first__bit
+                                                            ) >= 0)
+  
+  axiom calculator__result__success__last__bit_axiom : ((calculator__result__success__last__bit
+                                                           )
+                                                          > (calculator__result__success__first__bit
+                                                               ))
+  
+  axiom calculator__result__success__position_axiom : ((calculator__result__success__position
+                                                          ) >= 0)
+  
+  function   calculator__result__value__first__bit () requires {  } ensures 
+    {  } returns int
+  
+  function   calculator__result__value__last__bit () requires {  } ensures 
+    {  } returns int
+  
+  function   calculator__result__value__position () requires {  } ensures 
+    {  } returns int
+  
+  axiom calculator__result__value__first__bit_axiom : ((calculator__result__value__first__bit
+                                                          ) >= 0)
+  
+  axiom calculator__result__value__last__bit_axiom : ((calculator__result__value__last__bit
+                                                         )
+                                                        > (calculator__result__value__first__bit
+                                                             ))
+  
+  axiom calculator__result__value__position_axiom : ((calculator__result__value__position
+                                                        ) >= 0)
+  
+  function   user_eq (a : result__ b : result__) requires { True } ensures 
+    { True } returns bool
+  
+  function   dummy () requires {  } ensures  {  } returns result__
+  
+  type result____ref  = { mutable result____content : result__ }
+  
+  function   result____ref_result____content__projection (a : result____ref)
+    requires {  } ensures  {  } returns result__ = a.result____content
+  
+  meta model_projection function result____ref_result____content__projection
+  
+  meta inline:no function result____ref_result____content__projection
+  
+  function   result____havoc (x : result____ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module for defining the constant "l" defined at calculator.ads:19, created in Gnat2Why.Decls.Translate_Constant *)
+module Calculator__div__l
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Locker__locker
+  
+  function [model_projected] [name:L] [model_trace:1241]
+    [sloc:calculator.ads:19] l () requires {  } ensures  {  } returns
+    Locker__locker.locker
+
+end
+
+(* Module for defining the constant "a" defined at calculator.ads:19, created in Gnat2Why.Decls.Translate_Constant *)
+module Calculator__div__a
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function [name:A] [model_trace:1246] [sloc:calculator.ads:19] a () requires
+    {  } ensures  {  } returns int
+
+end
+
+(* Module for defining the constant "b" defined at calculator.ads:19, created in Gnat2Why.Decls.Translate_Constant *)
+module Calculator__div__b
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  function [name:B] [model_trace:1247] [sloc:calculator.ads:19] b () requires
+    {  } ensures  {  } returns int
+
+end
+
+(* Module for possibly declaring a logic function for "is_locked" defined at locker.ads:15, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Locker__is_locked
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Locker__locker
+  
+  function   is_locked (l : Locker__locker.locker) requires { True } ensures 
+    { True } returns bool
+  
+  function   is_locked__function_guard
+    (([mlw:proxy_symbol] [introduced] temp___result_167) : bool
+    l : Locker__locker.locker) requires { True } ensures  { True } returns
+    bool
+
+end
+
+(* Module giving axioms for type "locker" defined at locker.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Locker__locker___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Locker__locker
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_223) : Locker__locker.locker ([mlw:proxy_symbol]
+    [introduced] temp___is_init_219) : bool ([mlw:proxy_symbol]
+    [introduced] temp___skip_constant_220) : bool ([mlw:proxy_symbol]
+    [introduced] temp___do_toplevel_221) : bool ([mlw:proxy_symbol]
+    [introduced] temp___do_typ_inv_222) : bool) requires { True } ensures 
+    { True } returns  = True
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_224) : Locker__locker.locker ([mlw:proxy_symbol]
+    [introduced] temp___skip_top_level_225) : bool) requires { True }
+    ensures  { True } returns  = True
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_locked" defined at locker.ads:15, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Locker__is_locked___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Locker__locker
+  use        Locker__is_locked
+  use        Locker__locker___axiom
+  
+  function   is_locked (l : Locker__locker.locker) requires { True } ensures 
+    { ((result = (Locker__is_locked.is_locked l)) /\
+         (Locker__is_locked.is_locked__function_guard result l) /\ True) }
+    returns bool
+  
+  axiom is_locked__post_axiom : --pp_universal_quantif NOT IMPLEMENTED
+
+end
+
+(* Module for defining a ref holding the value of variable "v" defined at calculator.adb:52, created in Gnat2Why.Decls.Translate_Variable *)
+module Calculator__div__v
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  val v [model_trace:1064] [model_projected]
+  [name:V] [sloc:calculator.adb:52]: int
+
+end
+
+(* Module giving axioms for type "int32" defined at calculator.ads:8, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Calculator__int32___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Calculator__int32
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_186) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_182) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_183) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_184) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_185) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_182) = True) \/
+          (Calculator__int32.first <= Calculator__int32.last))
+       then
+       (Calculator__int32.dynamic_property Calculator__int32.first
+          Calculator__int32.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_186))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_187) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_188) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module for axiomatizing type "int64" defined at calculator.ads:9, created in Gnat2Why.Types.Translate_Type *)
+module Calculator__int64
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  
+  type int64  = <range -9223372036854775808 9223372036854775807>
+  
+  function   first () requires { True } ensures  { True } returns
+    int = -9223372036854775808
+  
+  function   last () requires { True } ensures  { True } returns
+    int = 9223372036854775807
+  
+  function   in_range (x : int) requires { True } ensures  { True } returns
+     = ((first <= x) /\ (x <= last))
+  
+  clone export ada__model.Static_Discrete with axiom . type t = int64,
+    function first = first, function last = last,
+    predicate in_range = in_range
+  
+  type int64__ref  = { mutable int64__content : int64 }
+  
+  function   int64__ref_int64__content__projection (a : int64__ref) requires
+    {  } ensures  {  } returns int64 = a.int64__content
+  
+  meta model_projection function int64__ref_int64__content__projection
+  
+  meta inline:no function int64__ref_int64__content__projection
+  
+  function   int64__havoc (x : int64__ref) requires {  } ensures  {  }
+    returns unit
+
+end
+
+(* Module giving axioms for type "int64" defined at calculator.ads:9, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Calculator__int64___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Calculator__int64
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_200) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_196) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_197) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_198) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_199) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_196) = True) \/
+          (Calculator__int64.first <= Calculator__int64.last))
+       then
+       (Calculator__int64.dynamic_property Calculator__int64.first
+          Calculator__int64.last ([mlw:proxy_symbol]
+          [introduced] temp___expr_200))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_201) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_202) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "v" defined at calculator.adb:52, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__div__v___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving axioms for type "result" defined at calculator.ads:11, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Calculator__result___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use        Calculator__result
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_207) : Calculator__result.result__
+    ([mlw:proxy_symbol] [introduced] temp___is_init_203) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_204) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_205) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_206) : bool) requires
+    { True } ensures  { True } returns  = True
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol]
+    [introduced] temp___expr_208) : Calculator__result.result__
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_209) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module giving an empty axiom for the entity "l" defined at calculator.ads:19, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__div__l___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving an empty axiom for the entity "a" defined at calculator.ads:19, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__div__a___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving an empty axiom for the entity "b" defined at calculator.ads:19, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__div__b___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  
+  
+
+end
+
+(* Module giving axioms for type "pin" defined at pin.ads:11, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pin__pin___axiom
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        Pin__pin
+  
+  function   dynamic_invariant
+    (([mlw:proxy_symbol] [introduced] temp___expr_216) : int
+    ([mlw:proxy_symbol] [introduced] temp___is_init_212) : bool
+    ([mlw:proxy_symbol] [introduced] temp___skip_constant_213) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_toplevel_214) : bool
+    ([mlw:proxy_symbol] [introduced] temp___do_typ_inv_215) : bool) requires
+    { True } ensures  { True } returns
+     = (if
+       ((([mlw:proxy_symbol] [introduced] temp___is_init_212) = True) \/
+          (Pin__pin.first <= Pin__pin.last))
+       then
+       (Pin__pin.dynamic_property Pin__pin.first Pin__pin.last
+          ([mlw:proxy_symbol] [introduced] temp___expr_216))
+       )
+  
+  function   default_initial_assumption
+    (([mlw:proxy_symbol] [introduced] temp___expr_217) : int
+    ([mlw:proxy_symbol] [introduced] temp___skip_top_level_218) : bool)
+    requires { True } ensures  { True } returns  = True
+
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "div" defined at calculator.ads:19, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Calculator__div__subprogram_def
+  
+  use import _gnatprove_standard.Main
+  use import int.Int
+  use import int.Int
+  use        _gnatprove_standard.Main
+  use        _gnatprove_standard.Int_Division
+  use        _gnatprove_standard.Boolean
+  use        Locker__locker
+  use        Calculator__result
+  use        Calculator__div__l
+  use        Calculator__div__a
+  use        Calculator__div__b
+  use        Locker__is_locked___axiom
+  use        Calculator__div__v
+  use        Calculator__int32
+  use        Calculator__int32___axiom
+  use        Calculator__int32__rep
+  use        Calculator__int64___axiom
+  use        Locker__locker___axiom
+  use        Calculator__div__v___axiom
+  use        Calculator__int32___axiom
+  use        Calculator__int64___axiom
+  use        Calculator__result___axiom
+  use        Calculator__div__l___axiom
+  use        Calculator__div__a___axiom
+  use        Calculator__div__b___axiom
+  use        Locker__is_locked___axiom
+  use        Locker__locker___axiom
+  use        Pin__pin___axiom
+  
+  val calculator__div__result [name:Div] [model_projected]
+  [model_trace:1240@result] : Calculator__result.result__
+  
+  function [GP_Subp:calculator.ads:19] [sloc:calculator.ads:19] def
+    (__void_param : unit) requires { True } ensures  {  } returns
+     = (* Assume dynamic invariants of inputs of the subprogram calculator.ads:19 *);
+        assume
+        { (Locker__locker___axiom.dynamic_invariant Calculator__div__l.l True
+             False True True) };
+        assume
+        { (Calculator__int32___axiom.dynamic_invariant Calculator__div__a.a
+             True False True True) };
+        assume
+        { (Calculator__int32___axiom.dynamic_invariant Calculator__div__b.b
+             True False True True) };
+        (* Assume moved pointers in outputs of the subprogram calculator.ads:19 *);
+        (* Check for RTE in the Pre of the subprogram calculator.ads:19 *);
+        abstract ensures
+        { True } begin  (let _ = True in ())  end;
+        (* Assume Pre of the subprogram calculator.ads:19 *);
+        (try
+        ();
+          ([sloc:calculator.adb:52] ( Calculator__div__v.v := ( 0));
+          assume
+          { (Calculator__int64___axiom.dynamic_invariant
+               !Calculator__div__v.v True False True True) });
+          ();
+          ([GP_Sloc:calculator.adb:54:16] ([sloc:calculator.adb:54] ()));
+          ([GP_Sloc:calculator.adb:54:7] ([sloc:calculator.adb:54] (if
+                                                                   ([sloc:calculator.adb:54] ([branch_id=1070]
+                                                                   _gnatprove_standard.Main.spark__branch
+                                                                   :=
+                                                                   (Locker__is_locked___axiom.is_locked
+                                                                    ( Calculator__div__l.l))));
+                                                                   ([branch_id=1070] _gnatprove_standard.Main.spark__branch).bool__content
+                                                                   then
+                                                                   ();
+                                                                   ([GP_Sloc:calculator.adb:55:10] 
+                                                                   ([sloc:calculator.adb:55] (
+                                                                   calculator__div__result
+                                                                   :=
+                                                                   ( --pp_record_aggregate NOT IMPLEMENTED));
+                                                                   raise Return__exc))
+                                                                    else 
+                                                                   ())));
+          ([GP_Sloc:calculator.adb:58:7] ([sloc:calculator.adb:58] (if
+                                                                   ([sloc:calculator.adb:58] ([branch_id=1084]
+                                                                   _gnatprove_standard.Main.spark__branch
+                                                                   :=
+                                                                   (Calculator__div__b.b
+                                                                    = 0)));
+                                                                   ([branch_id=1084] _gnatprove_standard.Main.spark__branch).bool__content
+                                                                   then
+                                                                   ();
+                                                                   ([GP_Sloc:calculator.adb:59:10] 
+                                                                   ([sloc:calculator.adb:59] (
+                                                                   calculator__div__result
+                                                                   :=
+                                                                   ( --pp_record_aggregate NOT IMPLEMENTED));
+                                                                   raise Return__exc))
+                                                                    else 
+                                                                   ())));
+          ([GP_Sloc:calculator.adb:62:7] ([sloc:calculator.adb:62] ()));
+          ([GP_Sloc:calculator.adb:62:9] ([sloc:calculator.adb:62] (
+                                         Calculator__div__v.v :=
+                                         ( ([sloc:calculator.adb:62] 
+                                           ([GP_Sloc:calculator.adb:62:21]
+                                           [comment:      V := Int64(A) / Int64(B);                     ^ calculator.adb:62:21:VC_DIVISION_CHECK]
+                                           [vc:annotation]
+                                           [GP_Reason:VC_DIVISION_CHECK]
+                                           [GP_Id:3]
+                                           [GP_Shape:v_assign__div] (
+                                           _gnatprove_standard.Int_Division.div_
+                                             Calculator__div__a.a
+                                             Calculator__div__b.b)))))));
+          ([GP_Sloc:calculator.adb:63:10] ([sloc:calculator.adb:63] ()));
+          ([GP_Sloc:calculator.adb:63:7] ([sloc:calculator.adb:63] (if
+                                                                   ([sloc:calculator.adb:63] ([branch_id=1105]
+                                                                   _gnatprove_standard.Main.spark__branch
+                                                                   :=
+                                                                   ((!Calculator__div__v.v
+                                                                    < -2147483648)
+                                                                    ||
+                                                                    (!Calculator__div__v.v
+                                                                    > 2147483647))));
+                                                                   ([branch_id=1105] _gnatprove_standard.Main.spark__branch).bool__content
+                                                                   then
+                                                                   ();
+                                                                   ([GP_Sloc:calculator.adb:64:10] 
+                                                                   ([sloc:calculator.adb:64] (
+                                                                   calculator__div__result
+                                                                   :=
+                                                                   ( --pp_record_aggregate NOT IMPLEMENTED));
+                                                                   raise Return__exc))
+                                                                    else
+                                                                   ();
+                                                                   ([GP_Sloc:calculator.adb:66:46] 
+                                                                   ([sloc:calculator.adb:66] ()));
+                                                                   ([GP_Sloc:calculator.adb:66:10] 
+                                                                   ([sloc:calculator.adb:66] (
+                                                                   calculator__div__result
+                                                                   :=
+                                                                   ( --pp_record_aggregate NOT IMPLEMENTED));
+                                                                   raise Return__exc)))));
+          raise Return__exc with | Return__exc  -> ());
+        abstract ensures
+        { True } begin  (let _ = True in ())  end;
+        !calculator__div__result
+
+end

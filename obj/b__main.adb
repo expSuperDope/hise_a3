@@ -7,37 +7,41 @@ with Ada.Exceptions;
 
 package body ada_main is
 
-   E072 : Short_Integer; pragma Import (Ada, E072, "system__os_lib_E");
+   E069 : Short_Integer; pragma Import (Ada, E069, "system__os_lib_E");
+   E011 : Short_Integer; pragma Import (Ada, E011, "ada__exceptions_E");
    E015 : Short_Integer; pragma Import (Ada, E015, "system__soft_links_E");
    E025 : Short_Integer; pragma Import (Ada, E025, "system__exception_table_E");
-   E040 : Short_Integer; pragma Import (Ada, E040, "ada__containers_E");
-   E068 : Short_Integer; pragma Import (Ada, E068, "ada__io_exceptions_E");
-   E052 : Short_Integer; pragma Import (Ada, E052, "ada__strings_E");
-   E054 : Short_Integer; pragma Import (Ada, E054, "ada__strings__maps_E");
-   E058 : Short_Integer; pragma Import (Ada, E058, "ada__strings__maps__constants_E");
-   E078 : Short_Integer; pragma Import (Ada, E078, "interfaces__c_E");
-   E027 : Short_Integer; pragma Import (Ada, E027, "system__exceptions_E");
-   E080 : Short_Integer; pragma Import (Ada, E080, "system__object_reader_E");
-   E047 : Short_Integer; pragma Import (Ada, E047, "system__dwarf_lines_E");
+   E038 : Short_Integer; pragma Import (Ada, E038, "ada__containers_E");
+   E065 : Short_Integer; pragma Import (Ada, E065, "ada__io_exceptions_E");
+   E050 : Short_Integer; pragma Import (Ada, E050, "ada__strings_E");
+   E052 : Short_Integer; pragma Import (Ada, E052, "ada__strings__maps_E");
+   E056 : Short_Integer; pragma Import (Ada, E056, "ada__strings__maps__constants_E");
+   E075 : Short_Integer; pragma Import (Ada, E075, "interfaces__c_E");
+   E026 : Short_Integer; pragma Import (Ada, E026, "system__exceptions_E");
+   E077 : Short_Integer; pragma Import (Ada, E077, "system__object_reader_E");
+   E045 : Short_Integer; pragma Import (Ada, E045, "system__dwarf_lines_E");
    E017 : Short_Integer; pragma Import (Ada, E017, "system__soft_links__initialize_E");
-   E039 : Short_Integer; pragma Import (Ada, E039, "system__traceback__symbolic_E");
-   E105 : Short_Integer; pragma Import (Ada, E105, "ada__tags_E");
-   E103 : Short_Integer; pragma Import (Ada, E103, "ada__streams_E");
-   E117 : Short_Integer; pragma Import (Ada, E117, "system__file_control_block_E");
-   E116 : Short_Integer; pragma Import (Ada, E116, "system__finalization_root_E");
-   E114 : Short_Integer; pragma Import (Ada, E114, "ada__finalization_E");
-   E113 : Short_Integer; pragma Import (Ada, E113, "system__file_io_E");
-   E101 : Short_Integer; pragma Import (Ada, E101, "ada__text_io_E");
-   E149 : Short_Integer; pragma Import (Ada, E149, "memorystore_E");
-   E151 : Short_Integer; pragma Import (Ada, E151, "mycommandline_E");
-   E153 : Short_Integer; pragma Import (Ada, E153, "mystring_E");
-   E155 : Short_Integer; pragma Import (Ada, E155, "mystringtokeniser_E");
-   E143 : Short_Integer; pragma Import (Ada, E143, "pin_E");
-   E141 : Short_Integer; pragma Import (Ada, E141, "locker_E");
-   E139 : Short_Integer; pragma Import (Ada, E139, "calculator_E");
-   E147 : Short_Integer; pragma Import (Ada, E147, "lockmemory_E");
-   E157 : Short_Integer; pragma Import (Ada, E157, "stack_E");
-   E159 : Short_Integer; pragma Import (Ada, E159, "stringtointeger_E");
+   E037 : Short_Integer; pragma Import (Ada, E037, "system__traceback__symbolic_E");
+   E102 : Short_Integer; pragma Import (Ada, E102, "ada__strings__utf_encoding_E");
+   E108 : Short_Integer; pragma Import (Ada, E108, "ada__tags_E");
+   E100 : Short_Integer; pragma Import (Ada, E100, "ada__strings__text_buffers_E");
+   E098 : Short_Integer; pragma Import (Ada, E098, "ada__streams_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "system__file_control_block_E");
+   E123 : Short_Integer; pragma Import (Ada, E123, "system__finalization_root_E");
+   E121 : Short_Integer; pragma Import (Ada, E121, "ada__finalization_E");
+   E120 : Short_Integer; pragma Import (Ada, E120, "system__file_io_E");
+   E096 : Short_Integer; pragma Import (Ada, E096, "ada__text_io_E");
+   E168 : Short_Integer; pragma Import (Ada, E168, "memorystore_E");
+   E172 : Short_Integer; pragma Import (Ada, E172, "mycommandline_E");
+   E152 : Short_Integer; pragma Import (Ada, E152, "mystring_E");
+   E154 : Short_Integer; pragma Import (Ada, E154, "mystringtokeniser_E");
+   E146 : Short_Integer; pragma Import (Ada, E146, "pin_E");
+   E144 : Short_Integer; pragma Import (Ada, E144, "locker_E");
+   E142 : Short_Integer; pragma Import (Ada, E142, "calculator_E");
+   E166 : Short_Integer; pragma Import (Ada, E166, "lockmemory_E");
+   E170 : Short_Integer; pragma Import (Ada, E170, "stack_E");
+   E156 : Short_Integer; pragma Import (Ada, E156, "stringtointeger_E");
+   E149 : Short_Integer; pragma Import (Ada, E149, "commandhandler_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -48,7 +52,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E101 := E101 - 1;
+      E096 := E096 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -59,7 +63,7 @@ package body ada_main is
          procedure F2;
          pragma Import (Ada, F2, "system__file_io__finalize_body");
       begin
-         E113 := E113 - 1;
+         E120 := E120 - 1;
          F2;
       end;
       declare
@@ -72,7 +76,7 @@ package body ada_main is
 
    procedure adafinal is
       procedure s_stalib_adafinal;
-      pragma Import (C, s_stalib_adafinal, "system__standard_library__adafinal");
+      pragma Import (Ada, s_stalib_adafinal, "system__standard_library__adafinal");
 
       procedure Runtime_Finalize;
       pragma Import (C, Runtime_Finalize, "__gnat_runtime_finalize");
@@ -87,6 +91,7 @@ package body ada_main is
    end adafinal;
 
    type No_Param_Proc is access procedure;
+   pragma Favor_Top_Level (No_Param_Proc);
 
    procedure adainit is
       Main_Priority : Integer;
@@ -119,8 +124,6 @@ package body ada_main is
       pragma Import (C, Default_Stack_Size, "__gl_default_stack_size");
       Default_Secondary_Stack_Size : System.Parameters.Size_Type;
       pragma Import (C, Default_Secondary_Stack_Size, "__gnat_default_ss_size");
-      Leap_Seconds_Support : Integer;
-      pragma Import (C, Leap_Seconds_Support, "__gl_leap_seconds_support");
       Bind_Env_Addr : System.Address;
       pragma Import (C, Bind_Env_Addr, "__gl_bind_env_addr");
 
@@ -154,7 +157,6 @@ package body ada_main is
       Unreserve_All_Interrupts := 0;
       Detect_Blocking := 0;
       Default_Stack_Size := -1;
-      Leap_Seconds_Support := 0;
 
       ada_main'Elab_Body;
       Default_Secondary_Stack_Size := System.Parameters.Runtime_Default_Sec_Stack_Size;
@@ -165,60 +167,69 @@ package body ada_main is
 
       Finalize_Library_Objects := finalize_library'access;
 
+      Ada.Exceptions'Elab_Spec;
       System.Soft_Links'Elab_Spec;
       System.Exception_Table'Elab_Body;
       E025 := E025 + 1;
       Ada.Containers'Elab_Spec;
-      E040 := E040 + 1;
+      E038 := E038 + 1;
       Ada.Io_Exceptions'Elab_Spec;
-      E068 := E068 + 1;
+      E065 := E065 + 1;
       Ada.Strings'Elab_Spec;
-      E052 := E052 + 1;
+      E050 := E050 + 1;
       Ada.Strings.Maps'Elab_Spec;
-      E054 := E054 + 1;
+      E052 := E052 + 1;
       Ada.Strings.Maps.Constants'Elab_Spec;
-      E058 := E058 + 1;
+      E056 := E056 + 1;
       Interfaces.C'Elab_Spec;
-      E078 := E078 + 1;
+      E075 := E075 + 1;
       System.Exceptions'Elab_Spec;
-      E027 := E027 + 1;
+      E026 := E026 + 1;
       System.Object_Reader'Elab_Spec;
-      E080 := E080 + 1;
+      E077 := E077 + 1;
       System.Dwarf_Lines'Elab_Spec;
-      E047 := E047 + 1;
+      E045 := E045 + 1;
       System.Os_Lib'Elab_Body;
-      E072 := E072 + 1;
+      E069 := E069 + 1;
       System.Soft_Links.Initialize'Elab_Body;
       E017 := E017 + 1;
       E015 := E015 + 1;
       System.Traceback.Symbolic'Elab_Body;
-      E039 := E039 + 1;
+      E037 := E037 + 1;
+      E011 := E011 + 1;
+      Ada.Strings.Utf_Encoding'Elab_Spec;
+      E102 := E102 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
-      E105 := E105 + 1;
+      E108 := E108 + 1;
+      Ada.Strings.Text_Buffers'Elab_Spec;
+      Ada.Strings.Text_Buffers'Elab_Body;
+      E100 := E100 + 1;
       Ada.Streams'Elab_Spec;
-      E103 := E103 + 1;
+      E098 := E098 + 1;
       System.File_Control_Block'Elab_Spec;
-      E117 := E117 + 1;
+      E124 := E124 + 1;
       System.Finalization_Root'Elab_Spec;
-      E116 := E116 + 1;
+      System.Finalization_Root'Elab_Body;
+      E123 := E123 + 1;
       Ada.Finalization'Elab_Spec;
-      E114 := E114 + 1;
+      E121 := E121 + 1;
       System.File_Io'Elab_Body;
-      E113 := E113 + 1;
+      E120 := E120 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E101 := E101 + 1;
+      E096 := E096 + 1;
+      E168 := E168 + 1;
+      E172 := E172 + 1;
+      E152 := E152 + 1;
+      E154 := E154 + 1;
+      E146 := E146 + 1;
+      E144 := E144 + 1;
+      E142 := E142 + 1;
+      E166 := E166 + 1;
+      E170 := E170 + 1;
+      E156 := E156 + 1;
       E149 := E149 + 1;
-      E151 := E151 + 1;
-      E153 := E153 + 1;
-      E155 := E155 + 1;
-      E143 := E143 + 1;
-      E141 := E141 + 1;
-      E139 := E139 + 1;
-      E147 := E147 + 1;
-      E157 := E157 + 1;
-      E159 := E159 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -241,8 +252,10 @@ package body ada_main is
       pragma Volatile (Ensure_Reference);
 
    begin
-      gnat_argc := argc;
-      gnat_argv := argv;
+      if gnat_argc = 0 then
+         gnat_argc := argc;
+         gnat_argv := argv;
+      end if;
       gnat_envp := envp;
 
       Initialize (SEH'Address);
@@ -254,20 +267,22 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\memorystore.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mycommandline.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystring.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\mystringtokeniser.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\pin.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\locker.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\calculator.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\lockmemory.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stack.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\stringtointeger.o
-   --   C:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\main.o
-   --   -LC:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\
-   --   -LC:\Users\Lenovo\Desktop\HISE\A3\assignment3\obj\
-   --   -LC:/gnat/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\memorystore.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\mycommandline.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\mystring.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\mystring_instance.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\mystringtokeniser.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\pin.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\locker.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\calculator.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\lockmemory.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\stack.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\stringtointeger.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\commandhandler.o
+   --   C:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\main.o
+   --   -LC:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\
+   --   -LC:\Users\29259\Desktop\25s1\Hise\A3\hise_a3\obj\
+   --   -LD:/gant/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat
    --   -Wl,--stack=0x2000000

@@ -34,9 +34,10 @@ project _Auto is
       for Object_File_Suffix ("changelog") use "-";
       for Object_File_Suffix ("qgen") use "-";
       for Object_File_Suffix ("simulink") use "-";
+      for Object_File_Suffix ("why") use "-";
       for Object_File_Suffix ("python") use ".pyc";
+      for Object_File_Suffix ("diff") use "-";
       for Object_File_Suffix ("css") use "-";
-      for Object_File_Suffix ("wsdl") use "-";
       for Object_File_Suffix ("c++") use ".o";
       for Object_File_Suffix ("c") use ".o";
       for Object_File_Suffix ("ada") use ".o";
@@ -45,6 +46,10 @@ project _Auto is
    package Naming is
       for Spec_Suffix ("ada") use ".ads";
       for Body_Suffix ("ada") use ".adb";
+      for Spec_Suffix ("c") use ".h";
+      for Body_Suffix ("c") use ".c";
+      for Spec_Suffix ("c++") use ".hh";
+      for Body_Suffix ("c++") use ".cpp";
       for Dot_Replacement use "-";
       for Casing use "lowercase";
       for Spec_Suffix ("html") use ".html";
@@ -72,9 +77,10 @@ project _Auto is
       for Body_Suffix ("qgen") use ".xmi";
       for Spec_Suffix ("simulink") use ".slx";
       for Body_Suffix ("simulink") use ".mdl";
+      for Body_Suffix ("why") use ".why";
       for Body_Suffix ("python") use ".py";
+      for Body_Suffix ("diff") use ".diff";
       for Body_Suffix ("css") use ".css";
-      for Spec_Suffix ("wsdl") use ".wsdl";
       for Spec_Suffix ("c++") use ".hh";
       for Body_Suffix ("c++") use ".cpp";
       for Spec_Suffix ("c") use ".h";
