@@ -1,0 +1,149 @@
+{
+  "spark": [
+    {
+      "name": "Locker",
+      "sloc": [
+        {
+          "file": "locker.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Locker.Locker",
+      "sloc": [
+        {
+          "file": "locker.ads",
+          "line": 7
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Locker.Init",
+      "sloc": [
+        {
+          "file": "locker.ads",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Locker.Try_Unlock",
+      "sloc": [
+        {
+          "file": "locker.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Locker.Reset_PWD",
+      "sloc": [
+        {
+          "file": "locker.ads",
+          "line": 13
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Locker.Is_Locked",
+      "sloc": [
+        {
+          "file": "locker.ads",
+          "line": 15
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "locker.ads",
+      "line": 9,
+      "col": 19,
+      "rule": "UNUSED_INITIAL_VALUE",
+      "severity": "warning",
+      "entity": {
+        "name": "Locker.Init",
+        "sloc": [
+          {
+            "file": "locker.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Locker.Try_Unlock",
+          "sloc": [
+            {
+              "file": "locker.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Locker.Reset_PWD",
+          "sloc": [
+            {
+              "file": "locker.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Locker.Is_Locked",
+          "sloc": [
+            {
+              "file": "locker.ads",
+              "line": 15
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 9.73200018052012E-04,
+    "globals (basic)": 6.46376013755798E-02,
+    "globals/properties (advanced)": 5.21037988364697E-02,
+    "flow analysis": 5.61269978061318E-03,
+    "codepeer results": 7.00000009601354E-06,
+    "init_why_sections": 3.19399987347424E-04,
+    "translation of standard": 2.34770006500185E-03,
+    "translation of compilation unit": 1.09459003433585E-02,
+    "proof": 1.79999994998070E-06
+  }
+}

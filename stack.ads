@@ -19,10 +19,17 @@ package Stack is
    
    procedure Init(S : out Stack_Instance);
 
-   procedure Push(L:Locker.Locker; S : in out Stack_Instance; A : Int32; Success : in out Boolean);
-   procedure Push2(L:Locker.Locker; S : in out Stack_Instance; A, B : Int32; Success : in out Boolean);
-   procedure Pop(L:Locker.Locker; S : in out Stack_Instance; A : out Int32; Success : in out Boolean);
-   procedure Pop2(L:Locker.Locker; S : in out Stack_Instance; A, B : out Int32; Success : in out Boolean);
+   procedure Push(L:Locker.Locker; S : in out Stack_Instance; A : Int32; Success : in out Boolean)
+     with Pre => not Locker.Is_Locked(L);
+   
+   procedure Push2(L:Locker.Locker; S : in out Stack_Instance; A, B : Int32; Success : in out Boolean)
+     with Pre => not Locker.Is_Locked(L);
+   
+   procedure Pop(L:Locker.Locker; S : in out Stack_Instance; A : out Int32; Success : in out Boolean)
+     with Pre => not Locker.Is_Locked(L);
+   
+   procedure Pop2(L:Locker.Locker; S : in out Stack_Instance; A, B : out Int32; Success : in out Boolean)
+     with Pre => not Locker.Is_Locked(L);
    
 private
 

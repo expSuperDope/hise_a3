@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#6e558d0b#;
+   u00001 : constant Version_32 := 16#7f66f2f6#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -311,9 +311,9 @@ package ada_main is
    pragma Export (C, u00136, "ada__long_long_integer_text_ioB");
    u00137 : constant Version_32 := 16#4260bde7#;
    pragma Export (C, u00137, "ada__long_long_integer_text_ioS");
-   u00138 : constant Version_32 := 16#d1cbe297#;
+   u00138 : constant Version_32 := 16#86d6d3d3#;
    pragma Export (C, u00138, "calculatorB");
-   u00139 : constant Version_32 := 16#db405d59#;
+   u00139 : constant Version_32 := 16#73bc9cb4#;
    pragma Export (C, u00139, "calculatorS");
    u00140 : constant Version_32 := 16#88af0720#;
    pragma Export (C, u00140, "lockerB");
@@ -327,9 +327,9 @@ package ada_main is
    pragma Export (C, u00144, "system__exp_intB");
    u00145 : constant Version_32 := 16#2b83b7c4#;
    pragma Export (C, u00145, "system__exp_intS");
-   u00146 : constant Version_32 := 16#d49787fc#;
+   u00146 : constant Version_32 := 16#7857c3d4#;
    pragma Export (C, u00146, "lockmemoryB");
-   u00147 : constant Version_32 := 16#b7b4628b#;
+   u00147 : constant Version_32 := 16#252e6493#;
    pragma Export (C, u00147, "lockmemoryS");
    u00148 : constant Version_32 := 16#57817ae9#;
    pragma Export (C, u00148, "memorystoreB");
@@ -347,9 +347,9 @@ package ada_main is
    pragma Export (C, u00154, "mystringtokeniserB");
    u00155 : constant Version_32 := 16#fd8d8b9c#;
    pragma Export (C, u00155, "mystringtokeniserS");
-   u00156 : constant Version_32 := 16#ac3fcc70#;
+   u00156 : constant Version_32 := 16#47102666#;
    pragma Export (C, u00156, "stackB");
-   u00157 : constant Version_32 := 16#b588f38f#;
+   u00157 : constant Version_32 := 16#5ea71999#;
    pragma Export (C, u00157, "stackS");
    u00158 : constant Version_32 := 16#f3a38af4#;
    pragma Export (C, u00158, "stringtointegerB");

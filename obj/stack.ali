@@ -9,9 +9,9 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U stack%b		stack.adb		ac3fcc70 NE OO PK
+U stack%b		stack.adb		47102666 NE OO PK
 
-U stack%s		stack.ads		b588f38f EE NE OO PK
+U stack%s		stack.ads		5ea71999 EE NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -29,9 +29,9 @@ D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D locker.ads		20250521031720 659a9cc6 locker%s
+D locker.ads		20250524063514 659a9cc6 locker%s
 D pin.ads		20250513130918 553c8633 pin%s
-D stack.ads		20250521042512 d21861e8 stack%s
+D stack.ads		20250524054224 39378bfe stack%s
 D stack.adb		20250521085104 7e27ad98 stack%b
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
@@ -49,15 +49,15 @@ D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
 G a e
 G c Z s b [init stack 20 14 none]
 G c Z s b [push stack 22 14 none]
-G c Z s b [push2 stack 23 14 none]
-G c Z s b [pop stack 24 14 none]
-G c Z s b [pop2 stack 25 14 none]
+G c Z s b [push2 stack 25 14 none]
+G c Z s b [pop stack 28 14 none]
+G c Z s b [pop2 stack 31 14 none]
 G c Z s s [Tstack_arrayBIP stack 15 4 none]
-G c Z s s [stack_instanceIP stack 29 9 none]
+G c Z s s [stack_instanceIP stack 36 9 none]
 G r c none [push stack 22 14 none] [is_locked locker 15 13 none]
-G r c none [push2 stack 23 14 none] [is_locked locker 15 13 none]
-G r c none [pop stack 24 14 none] [is_locked locker 15 13 none]
-G r c none [pop2 stack 25 14 none] [is_locked locker 15 13 none]
+G r c none [push2 stack 25 14 none] [is_locked locker 15 13 none]
+G r c none [pop stack 28 14 none] [is_locked locker 15 13 none]
+G r c none [pop2 stack 31 14 none] [is_locked locker 15 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 14|4r6 4r22 5r6 5r31
 X 3 a-inteio.ads
@@ -69,44 +69,45 @@ X 10 interfac.ads
 38K9*Interfaces 184e15 14|2w6 13r21
 52I9*Integer_32<integer> 14|13r32
 X 12 locker.ads
-5K9*Locker 24e11 14|3w6 22r21 23r22 24r20 25r21 15|13r21 15r10 29r22 31r10
-. 47r20 49r10 65r21 67r10
-7R9*Locker 22e14 14|22r28 23r29 24r27 25r28 15|13r28 29r29 47r27 65r28
-15V13*Is_Locked{boolean} 15|15s17 31s17 49s17 67s17
+5K9*Locker 24e11 14|3w6 22r21 23r22 25r22 26r22 28r20 29r22 31r21 32r22 15|13r21
+. 15r10 29r22 31r10 47r20 49r10 65r21 67r10
+7R9*Locker 22e14 14|22r28 25r29 28r27 31r28 15|13r28 29r29 47r27 65r28
+15V13*Is_Locked{boolean} 14|23s29 26s29 29s29 32s29 15|15s17 31s17 49s17
+. 67s17
 X 14 stack.ads
-7K9*Stack 29E9 34l5 34e10 15|3b14 85l5 85t10
+7K9*Stack 36E9 41l5 41e10 15|3b14 85l5 85t10
 9N4*Max_Capacity 12r47 15|20r29 36r29
 12I12*Stack_Index{positive} 15r31 15|7r16
-13I12*Int32{10|52I9} 15r47 22r67 23r71 24r70 25r74 15|13r67 29r71 47r70 65r74
-15A9*Stack_Array(13I12)<integer> 30r20
-18R9*Stack_Instance 20r27 22r47 23r48 24r46 25r47 29c9 32e14 15|5r27 13r47
+13I12*Int32{10|52I9} 15r47 22r67 25r71 28r70 31r74 15|13r67 29r71 47r70 65r74
+15A9*Stack_Array(13I12)<integer> 37r20
+18R9*Stack_Instance 20r27 22r47 25r48 28r46 31r47 36c9 39e14 15|5r27 13r47
 . 29r48 47r46 65r47
 20U14*Init 20<19 15|5b14 11l8 11t12
 20r19 S{18R9} 15|5b19 8m10 10m7
 22U14*Push 22>19 22=36 22>63 22=74 15|13b14 27l8 27t12
-22r19 L{12|7R9} 15|13b19 15r27
+22r19 L{12|7R9} 23r39 15|13b19 15r27
 22r36 S{18R9} 15|13b36 20r10 21m10 21r25 22m10 22r17
 22i63 A{13I12} 15|13b63 22r33
 22b74 Success{boolean} 15|13b74 16m10 23m10 25m10
-23U14*Push2 23>20 23=37 23>64 23>67 23=78 15|29b14 45l8 45t13
-23r20 L{12|7R9} 15|29b20 31r27
-23r37 S{18R9} 15|29b37 36r10 37m10 37r25 38m10 38r17 39m10 39r25 40m10 40r17
-23i64 A{13I12} 15|29b64 38r33
-23i67 B{13I12} 15|29b67 40r33
-23b78 Success{boolean} 15|29b78 32m10 41m10 43m10
-24U14*Pop 24>18 24=35 24<62 24=77 15|47b14 63l8 63t11
-24r18 L{12|7R9} 15|47b18 49r27
-24r35 S{18R9} 15|47b35 56r10 57r15 57r22 58m10 58r25
-24i62 A{13I12} 15|47b62 52m10 57m10
-24b77 Success{boolean} 15|47b77 51m10 59m10 61m10
-25U14*Pop2 25>19 25=36 25<63 25<66 25=81 15|65b14 83l8 83t12
-25r19 L{12|7R9} 15|65b19 67r27
-25r36 S{18R9} 15|65b36 74r10 75r15 75r22 76m10 76r25 77r15 77r22 78m10 78r25
-25i63 A{13I12} 15|65b63 69m10 77m10
-25i66 B{13I12} 15|65b66 70m10 75m10
-25b81 Success{boolean} 15|65b81 68m10 79m10 81m10
-30a7*Data{15A9} 15|8m12 22m12 38m12 40m12 57r17 75r17 77r17
-31i7*Top_Index{natural} 15|10m9 20r12 21m12 21r27 22r19 36r12 37m12 37r27
+25U14*Push2 25>20 25=37 25>64 25>67 25=78 15|29b14 45l8 45t13
+25r20 L{12|7R9} 26r39 15|29b20 31r27
+25r37 S{18R9} 15|29b37 36r10 37m10 37r25 38m10 38r17 39m10 39r25 40m10 40r17
+25i64 A{13I12} 15|29b64 38r33
+25i67 B{13I12} 15|29b67 40r33
+25b78 Success{boolean} 15|29b78 32m10 41m10 43m10
+28U14*Pop 28>18 28=35 28<62 28=77 15|47b14 63l8 63t11
+28r18 L{12|7R9} 29r39 15|47b18 49r27
+28r35 S{18R9} 15|47b35 56r10 57r15 57r22 58m10 58r25
+28i62 A{13I12} 15|47b62 52m10 57m10
+28b77 Success{boolean} 15|47b77 51m10 59m10 61m10
+31U14*Pop2 31>19 31=36 31<63 31<66 31=81 15|65b14 83l8 83t12
+31r19 L{12|7R9} 32r39 15|65b19 67r27
+31r36 S{18R9} 15|65b36 74r10 75r15 75r22 76m10 76r25 77r15 77r22 78m10 78r25
+31i63 A{13I12} 15|65b63 69m10 77m10
+31i66 B{13I12} 15|65b66 70m10 75m10
+31b81 Success{boolean} 15|65b81 68m10 79m10 81m10
+37a7*Data{15A9} 15|8m12 22m12 38m12 40m12 57r17 75r17 77r17
+38i7*Top_Index{natural} 15|10m9 20r12 21m12 21r27 22r19 36r12 37m12 37r27
 . 38r19 39m12 39r27 40r19 56r12 57r24 58m12 58r27 74r12 75r24 76m12 76r27
 . 77r24 78m12 78r27
 X 15 stack.adb

@@ -9,10 +9,10 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U calculator%b		calculator.adb		d1cbe297 NE OO PK
+U calculator%b		calculator.adb		86d6d3d3 NE OO PK
 Z ada.tags%s		a-tags.adb		a-tags.ali
 
-U calculator%s		calculator.ads		db405d59 EE NE OO PK
+U calculator%s		calculator.ads		73bc9cb4 EE NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -28,11 +28,11 @@ D a-tags.ads		20190518041258 491b781d ada.tags%s
 D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
-D calculator.ads	20250521040348 bcd0cf3e calculator%s
-D calculator.adb	20250521091352 6d1b2da9 calculator%b
+D calculator.ads	20250524055300 142c0ed3 calculator%s
+D calculator.adb	20250524052534 92fadd00 calculator%b
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D locker.ads		20250521031720 659a9cc6 locker%s
+D locker.ads		20250524063514 659a9cc6 locker%s
 D pin.ads		20250513130918 553c8633 pin%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
@@ -48,61 +48,62 @@ D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
 G a e
-G c Z s b [add calculator 16 13 none]
-G c Z s b [sub calculator 17 13 none]
-G c Z s b [mul calculator 18 13 none]
-G c Z s b [div calculator 19 13 none]
-G c Z s s [resultIP calculator 11 9 none]
-G r c none [add calculator 16 13 none] [is_locked locker 15 13 none]
-G r c none [sub calculator 17 13 none] [is_locked locker 15 13 none]
-G r c none [mul calculator 18 13 none] [is_locked locker 15 13 none]
-G r c none [div calculator 19 13 none] [is_locked locker 15 13 none]
+G c Z s b [add calculator 18 13 none]
+G c Z s b [sub calculator 21 13 none]
+G c Z s b [mul calculator 24 13 none]
+G c Z s b [div calculator 27 13 none]
+G c Z s s [resultIP calculator 13 9 none]
+G r c none [add calculator 18 13 none] [is_locked locker 15 13 none]
+G r c none [sub calculator 21 13 none] [is_locked locker 15 13 none]
+G r c none [mul calculator 24 13 none] [is_locked locker 15 13 none]
+G r c none [div calculator 27 13 none] [is_locked locker 15 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 10|3r6 3r22 4r6 4r31
+16K9*Ada 20e8 10|5r6 5r22 6r6 6r31
 X 3 a-inteio.ads
-18K13*Integer_Text_IO[8|46] 10|4w10 4r35
+18K13*Integer_Text_IO[8|46] 10|6w10 6r35
 X 7 a-textio.ads
-57K13*Text_IO 727e16 10|3w10 3r26
+57K13*Text_IO 727e16 10|5w10 5r26
 X 10 calculator.ads
-6K9*Calculator 22l5 22e15 11|1r10 2r10 4b14 70l5 70t15
-8I12*Int32{12|52I9} 13r18 16r43 17r43 18r43 19r43 11|2r21 6r42 13r20 13r51
-. 16r41 21r42 28r20 28r51 31r41 36r42 43r20 43r51 46r40 51r42 63r20 63r51
-. 66r40
-9I12*Int64{12|55I9} 11|1r21 7r10 7r19 7r30 13r14 13r45 22r10 22r19 22r30
-. 28r14 28r45 37r10 37r19 37r30 43r14 43r45 52r10 62r12 62r23 63r14 63r45
-11R9*Result 14e14 16r57 17r57 18r57 19r57 11|6r56 21r56 36r56 51r56
-12b7*Success{boolean} 11|10m18 14m18 16m18 25m18 29m18 31m18 40m18 44m18
-. 46m18 55m18 59m18 64m18 66m18
-13i7*Value{8I12} 11|10m34 14m34 16m34 25m34 29m34 31m34 40m34 44m34 46m33
-. 55m34 59m34 64m35 66m33
-16V13*Add{11R9} 16>18 16>36 16>39 11|6b14 18l8 18t11
-16r18 L{14|7R9} 11|6b18 9r27
-16i36 A{8I12} 11|6b36 7r25
-16i39 B{8I12} 11|6b39 7r36
-17V13*Sub{11R9} 17>18 17>36 17>39 11|21b14 33l8 33t11
-17r18 L{14|7R9} 11|21b18 24r27
-17i36 A{8I12} 11|21b36 22r25
-17i39 B{8I12} 11|21b39 22r36
-18V13*Mul{11R9} 18>18 18>36 18>39 11|36b14 48l8 48t11
-18r18 L{14|7R9} 11|36b18 39r27
-18i36 A{8I12} 11|36b36 37r25
-18i39 B{8I12} 11|36b39 37r36
-19V13*Div{11R9} 19>18 19>36 19>39 11|51b14 68l8 68t11
-19r18 L{14|7R9} 11|51b18 54r27
-19i36 A{8I12} 11|51b36 62r18
-19i39 B{8I12} 11|51b39 58r10 62r29
+8K9*Calculator 31l5 31e15 11|3r10 4r10 6b14 72l5 72t15
+10I12*Int32{12|52I9} 15r18 18r43 21r43 24r43 27r43 11|4r21 8r42 15r20 15r51
+. 18r41 23r42 30r20 30r51 33r41 38r42 45r20 45r51 48r40 53r42 65r20 65r51
+. 68r40
+11I12*Int64{12|55I9} 11|3r21 9r10 9r19 9r30 15r14 15r45 24r10 24r19 24r30
+. 30r14 30r45 39r10 39r19 39r30 45r14 45r45 54r10 64r12 64r23 65r14 65r45
+13R9*Result 16e14 18r57 21r57 24r57 27r57 11|8r56 23r56 38r56 53r56
+14b7*Success{boolean} 11|12m18 16m18 18m18 27m18 31m18 33m18 42m18 46m18
+. 48m18 57m18 61m18 66m18 68m18
+15i7*Value{10I12} 11|12m34 16m34 18m34 27m34 31m34 33m34 42m34 46m34 48m33
+. 57m34 61m34 66m35 68m33
+18V13*Add{13R9} 18>18 18>36 18>39 11|8b14 20l8 20t11
+18r18 L{14|7R9} 19r39 11|8b18 11r27
+18i36 A{10I12} 11|8b36 9r25
+18i39 B{10I12} 11|8b39 9r36
+21V13*Sub{13R9} 21>18 21>36 21>39 11|23b14 35l8 35t11
+21r18 L{14|7R9} 22r39 11|23b18 26r27
+21i36 A{10I12} 11|23b36 24r25
+21i39 B{10I12} 11|23b39 24r36
+24V13*Mul{13R9} 24>18 24>36 24>39 11|38b14 50l8 50t11
+24r18 L{14|7R9} 25r39 11|38b18 41r27
+24i36 A{10I12} 11|38b36 39r25
+24i39 B{10I12} 11|38b39 39r36
+27V13*Div{13R9} 27>18 27>36 27>39 11|53b14 70l8 70t11
+27r18 L{14|7R9} 28r39 11|53b18 56r27
+27i36 A{10I12} 11|53b36 64r18
+27i39 B{10I12} 11|53b39 60r10 64r29
 X 11 calculator.adb
-7i7 V{10|9I12} 13r10 13r41 16r47
-22i7 V{10|9I12} 28r10 28r41 31r47
-37i7 V{10|9I12} 43r10 43r41 46r46
-52i7 V{10|9I12} 62m7 63r10 63r41 66r46
+9i7 V{10|11I12} 15r10 15r41 18r47
+24i7 V{10|11I12} 30r10 30r41 33r47
+39i7 V{10|11I12} 45r10 45r41 48r46
+54i7 V{10|11I12} 64m7 65r10 65r41 68r46
 X 12 interfac.ads
-38K9*Interfaces 10|1w6 8r21 9r21 12|184e15
-52I9*Integer_32<integer> 10|8r32
-55I9*Integer_64<long_long_integer> 10|9r32
+38K9*Interfaces 10|3w6 10r21 11r21 12|184e15
+52I9*Integer_32<integer> 10|10r32
+55I9*Integer_64<long_long_integer> 10|11r32
 X 14 locker.ads
-5K9*Locker 10|2w6 16r21 17r21 18r21 19r21 11|6r21 9r10 21r21 24r10 36r21
-. 39r10 51r21 54r10 14|24e11
-7R9*Locker 10|16r28 17r28 18r28 19r28 11|6r28 21r28 36r28 51r28 14|22e14
-15V13*Is_Locked{boolean} 11|9s17 24s17 39s17 54s17
+5K9*Locker 10|4w6 18r21 19r22 21r21 22r22 24r21 25r22 27r21 28r22 11|8r21
+. 11r10 23r21 26r10 38r21 41r10 53r21 56r10 14|24e11
+7R9*Locker 10|18r28 21r28 24r28 27r28 11|8r28 23r28 38r28 53r28 14|22e14
+15V13*Is_Locked{boolean} 10|19s29 22s29 25s29 28s29 11|11s17 26s17 41s17
+. 56s17
 

@@ -1,0 +1,559 @@
+{
+  "spark": [
+    {
+      "name": "LockMemory",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 8
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "LockMemory.Get",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 10
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "LockMemory.Put",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 14
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "LockMemory.Remove",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 18
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "LockMemory.Print",
+      "sloc": [
+        {
+          "file": "lockmemory.ads",
+          "line": 21
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "lockmemory.ads",
+      "line": 21,
+      "col": 14,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "LockMemory.Print",
+        "sloc": [
+          {
+            "file": "lockmemory.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "lockmemory.adb",
+      "line": 16,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "LockMemory.Get",
+        "sloc": [
+          {
+            "file": "lockmemory.ads",
+            "line": 10
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "lockmemory.adb",
+      "check_line": 16,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Print",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 34
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MemoryStore.Print",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 34
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "LockMemory.Print",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Remove",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 29
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "LockMemory.Remove",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 18
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Remove",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MemoryStore.Remove",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 29
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "LockMemory.Remove",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 18
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Get",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Has",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 20
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "LockMemory.Get",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Get",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Has",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 20
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MemoryStore.Get",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MemoryStore.Has",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 20
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "LockMemory.Get",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Put",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 25
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "LockMemory.Put",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MemoryStore.Put",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Locker.Is_Locked",
+            "sloc": [
+              {
+                "file": "locker.ads",
+                "line": 15
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MemoryStore.Put",
+            "sloc": [
+              {
+                "file": "memorystore.ads",
+                "line": 25
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "LockMemory.Put",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 14
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "LockMemory",
+          "sloc": [
+            {
+              "file": "lockmemory.ads",
+              "line": 8
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 1.28009996842593E-03,
+    "globals (basic)": 6.79462030529976E-02,
+    "globals/properties (advanced)": 5.19581995904446E-02,
+    "flow analysis": 6.08280021697283E-03,
+    "codepeer results": 6.19999991613440E-06,
+    "init_why_sections": 3.17199999699369E-04,
+    "translation of standard": 2.34559993259609E-03,
+    "translation of compilation unit": 1.40057001262903E-02,
+    "proof": 5.97538828849792E-01
+  }
+}
