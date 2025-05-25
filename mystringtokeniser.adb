@@ -9,8 +9,8 @@ package body MyStringTokeniser with SPARK_Mode is
       Processed : Natural := 0;
       OutIndex : Integer := Tokens'First;
    begin
-      Count := 0;
       if (S'First > S'Last) then
+         Count := Processed;
          return;
       end if;
       Index := S'First;
@@ -68,8 +68,13 @@ package body MyStringTokeniser with SPARK_Mode is
                OutIndex := OutIndex + 1;
             end if;
 
+            if S'Last - Extent.Length < Index then
+               Count := Processed;
+               return;
+            else
             -- advance to first character after the token
-            Index := Index + Extent.Length;
+               Index := Index + Extent.Length;
+            end if;
          end if;
       end loop;
       Count := Processed;
