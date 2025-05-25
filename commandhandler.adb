@@ -37,6 +37,7 @@ package body CommandHandler with SPARK_Mode is
                return;
             end if;
 
+
             if NumTokens /= 1 then
                Put_Line("Count of tokens is not correct!");
                return;
@@ -200,8 +201,10 @@ package body CommandHandler with SPARK_Mode is
                A : Int32;
                Success : Boolean;
             begin
-               if Token2 < 1 or else Token2 > MemoryStore.Max_Locations then
+                if Token2 < 1 or else Token2 > MemoryStore.Max_Locations then
                   Put_Line("Invalid memory location!");
+               elsif not MemoryStore.Has(D, MemoryStore.Location_Index(Token2)) then
+                  Put_Line("Memory location not defined!");
                else
                   A := LockMemory.Get(L, D, MemoryStore.Location_Index(Token2));
                   Stack.Push(L, Sk, A, Success);
@@ -226,10 +229,12 @@ package body CommandHandler with SPARK_Mode is
 
             declare
                Token2 : Integer := StringToInteger.From_String(
-                 Lines.To_String(Lines.Substring(S, T(2).Start, T(2).Start + T(2).Length - 1)));
+                                                               Lines.To_String(Lines.Substring(S, T(2).Start, T(2).Start + T(2).Length - 1)));
             begin
                if Token2 < 1 or else Token2 > MemoryStore.Max_Locations then
                   Put_Line("Invalid memory location!");
+               elsif not MemoryStore.Has(D, MemoryStore.Location_Index(Token2)) then
+                  Put_Line("Nothing stored in this location!");
                else
                   LockMemory.Remove(L, D, MemoryStore.Location_Index(Token2));
                   Put_Line("Removed.");
@@ -271,6 +276,7 @@ package body CommandHandler with SPARK_Mode is
                Put_Line("Already unlocked!");
                return;
             end if;
+
 
             if NumTokens /= 2 then
                Put_Line("Count of tokens is not correct!");

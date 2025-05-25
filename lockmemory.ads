@@ -9,7 +9,7 @@ package LockMemory is
    
    function  Get    (L:Locker.Locker; D: MemoryStore.Database; Loc: MemoryStore.Location_Index) 
                      return MemoryStore.Int32
-     with Pre => not Locker.Is_Locked(L);
+     with Pre => not Locker.Is_Locked(L) and then MemoryStore.Has(D, Loc);
      
    procedure Put    (L:Locker.Locker; D: in out MemoryStore.Database;
                      Loc: in MemoryStore.Location_Index; Val: in MemoryStore.Int32)
